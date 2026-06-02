@@ -12,6 +12,7 @@
     "start:ws": "tsx src/server/index.ts",
     "feed:test": "tsx src/server/providers/test-feed.ts",
     "feed:harvest": "tsx src/server/providers/harvest.ts",
+    "feed:logos": "tsx src/server/providers/logoBackfill.ts",
     "demo:reseed": "tsx src/server/demoReseed.ts",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"

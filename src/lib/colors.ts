@@ -26,6 +26,11 @@ export function contrastText(hex: string): string {
   return luminance(hex) > 0.6 ? "#0b0e15" : "#ffffff";
 }
 
+/** Versão clara e legível de uma cor para texto/iniciais sobre fundo ESCURO. */
+export function textTint(hex: string): string {
+  return luminance(hex) < 0.5 ? shade(hex, 0.42) : shade(hex, 0.12);
+}
+
 /** Clareia/escurece um hex (amount > 0 clareia, < 0 escurece). */
 export function shade(hex: string, amount: number): string {
   const c = hex.replace("#", "");

@@ -4322,7 +4322,7 @@
     ],
     "marketsLoaded": true,
     "homeLogo": "https://media.api-sports.io/football/teams/24568.png",
-    "awayLogo": "https://media.api-sports.io/football/teams/3631.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ify4pz1580133054.png",
     "leagueLogo": "https://media.api-sports.io/football/leagues/334.png",
     "leagueFlag": "https://media.api-sports.io/flags/ua.svg",
     "country": "Ukraine"
@@ -7351,8 +7351,8 @@
       }
     ],
     "marketsLoaded": true,
-    "homeLogo": "https://media.api-sports.io/football/teams/3516.png",
-    "awayLogo": "https://media.api-sports.io/football/teams/3524.png",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/sa08p21615840670.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ujw7us1615840696.png",
     "leagueLogo": "https://media.api-sports.io/football/leagues/328.png",
     "leagueFlag": "https://media.api-sports.io/flags/ee.svg",
     "country": "Estonia"
@@ -32867,7 +32867,7 @@
       }
     ],
     "marketsLoaded": true,
-    "homeLogo": "https://media.api-sports.io/football/teams/5627.png",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/x3wglo1776013388.png",
     "awayLogo": "https://media.api-sports.io/football/teams/6486.png",
     "leagueLogo": "https://media.api-sports.io/football/leagues/334.png",
     "leagueFlag": "https://media.api-sports.io/flags/ua.svg",
@@ -39339,7 +39339,7 @@
       }
     ],
     "marketsLoaded": true,
-    "homeLogo": "https://media.api-sports.io/football/teams/8060.png",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/fjw4cg1764470742.png",
     "awayLogo": "https://media.api-sports.io/football/teams/17446.png",
     "leagueLogo": "https://media.api-sports.io/football/leagues/598.png",
     "leagueFlag": "https://media.api-sports.io/flags/ml.svg",
@@ -53588,7 +53588,8 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_cfl"
+    "providerSportKey": "americanfootball_cfl",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/8m9v4n1770835125.png"
   },
   {
     "id": "dd11809803e529a631150503b7e0119a",
@@ -53623,7 +53624,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_cfl"
+    "providerSportKey": "americanfootball_cfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/lksemj1565196917.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/4bo4wj1561667273.png"
   },
   {
     "id": "59d2e5df871409b186c7ee3a68004275",
@@ -53658,7 +53661,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_cfl"
+    "providerSportKey": "americanfootball_cfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/k8wjz71546002654.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ehy8wx1770834697.png"
   },
   {
     "id": "2c288580da16e12d35355f2548721be6",
@@ -53693,7 +53698,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/tar4cv1564336761.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/bo1lhk1584718020.png"
   },
   {
     "id": "3313dcc5e91f9a2dda995a5e36e55f52",
@@ -53728,7 +53735,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/4403h51564337013.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/5q97c21564336668.png"
   },
   {
     "id": "123a238486098cc9e8f71fea0cf4e7b0",
@@ -53763,7 +53772,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2cvvb01641184446.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ruwa1o1641184063.png"
   },
   {
     "id": "24941bb5e2e6f79d944530b0b8ea4be5",
@@ -53816,7 +53827,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/47vwmx1564336739.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qfl0dm1564335972.png"
   },
   {
     "id": "90d9b4e9c9485143021eb1535e792164",
@@ -53869,7 +53882,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/kdsryu1564337003.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/wvucol1564336213.png"
   },
   {
     "id": "1d6daad1c93bf7e5ae16be1db12e27d5",
@@ -53922,7 +53937,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/djodog1642631369.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/fo0l7i1564335758.png"
   },
   {
     "id": "1697069330d0343bdf7930ac0b0c3863",
@@ -53975,7 +53992,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wchasj1767524242.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/dsbj9o1564336891.png"
   },
   {
     "id": "a77e0c42754f1a99ae4fbea861a78408",
@@ -54028,7 +54047,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/4403h51564337013.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/0hcagy1564335911.png"
   },
   {
     "id": "5f92cc707afed4249e1e935dbbeacb5e",
@@ -54081,7 +54102,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/47vwmx1564336739.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/0kqdcr1564336226.png"
   },
   {
     "id": "b10ebab18213ecdc575885bfa874b98d",
@@ -54134,7 +54157,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/9phwqo1564335442.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/tvf3xp1564335802.png"
   },
   {
     "id": "185883640e8f90f283915ddadb0230a3",
@@ -54187,7 +54212,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/yyn0wz1564337133.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/p3jizw1564335745.png"
   },
   {
     "id": "4289d82f1cd4747962ff68c9098c6dcc",
@@ -54240,7 +54267,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xznb791564335987.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/pisnoj1564336578.png"
   },
   {
     "id": "e599d006aed0025ea9182d6763be6fd7",
@@ -54275,7 +54304,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pwcsog1564336028.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/pbaycq1564336435.png"
   },
   {
     "id": "7356f9bad07c48fc6b78f52e38c85c11",
@@ -54310,7 +54341,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pfm7mq1564336521.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/f02pdz1564337050.png"
   },
   {
     "id": "525909f6be5e505d076a97eb097528eb",
@@ -54345,7 +54378,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/tfd71j1564335548.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/jg7d4u1564335573.png"
   },
   {
     "id": "ac175733be9ad7061abab75fe080d18a",
@@ -54398,7 +54433,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/p7qmdy1564336566.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/xoc6qn1564335585.png"
   },
   {
     "id": "9e750af965ce9f276f4280686d4dba35",
@@ -54451,7 +54488,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/v2nns51567108787.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rjcv1o1564335608.png"
   },
   {
     "id": "932e0ced2b1a1ae5694574642bb186ae",
@@ -54504,7 +54543,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/jjyr0y1564336795.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ux54w01564336819.png"
   },
   {
     "id": "073bba47dc105fcd66913e74f281ae96",
@@ -54539,7 +54580,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/jcj91i1564336177.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/uj6mri1564335728.png"
   },
   {
     "id": "1bb9e45b6e7ed1200104ed018eff9093",
@@ -54574,7 +54617,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/l4qxzs1564335666.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/dd0bea1567109356.png"
   },
   {
     "id": "4f0e1900bdc8d12bf0cc91ae291c104e",
@@ -54609,7 +54654,8 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/eb6qjl1564336166.png"
   },
   {
     "id": "b460f3aa4235ec2485f25182755304d6",
@@ -54644,7 +54690,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/w0jd2o1564336487.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/vk8twd1564337191.png"
   },
   {
     "id": "a570687d47661da4982cfd885cdb4a44",
@@ -54697,7 +54745,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/a3lvm31767522890.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/glafxn1767538926.png"
   },
   {
     "id": "b38f4f63351c15767e64a76a73589574",
@@ -54750,7 +54800,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/tcru5g1720216041.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/pfm7mq1564336521.png"
   },
   {
     "id": "08c34029ecc85b4a6d519f90f9082e56",
@@ -54803,7 +54855,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ncaaf"
+    "providerSportKey": "americanfootball_ncaaf",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/jjyr0y1564336795.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/egfzq81564336508.png"
   },
   {
     "id": "8c94552d022acec4a0458d70c19d3da9",
@@ -54838,7 +54892,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wwuqyr1421434817.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png"
   },
   {
     "id": "acc580d74344ea3b31bbcdd057fe6a9c",
@@ -54891,7 +54947,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/8e8v4i1599764614.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/bqbtg61539537328.png"
   },
   {
     "id": "95c01d1bb797d6df14824b106c5a9130",
@@ -54926,7 +54984,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2975411515853129.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rrpvpr1420658174.png"
   },
   {
     "id": "b6cfdcbafa61ce220ba87dc2d9b80c77",
@@ -54979,7 +55039,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqqvpx1421434058.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/einz3p1546172463.png"
   },
   {
     "id": "7e09efed7e12c659b82740b67ce2f9a1",
@@ -55032,7 +55094,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqyryy1421436627.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/6pb37b1515849026.png"
   },
   {
     "id": "fc362aff0d889ec52d358307a70c32ed",
@@ -55085,7 +55149,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ji22531698678538.png"
   },
   {
     "id": "ed6d24ff979f9c71979fead577b0b3f7",
@@ -55138,7 +55204,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/qqtwwv1420941670.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/2dfpdl1537820969.png"
   },
   {
     "id": "e55c6fe19fce094ce214c8b0e5b504e9",
@@ -55173,7 +55241,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0mrsd41546427902.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/squvxy1420942389.png"
   },
   {
     "id": "c1d3fcec25aaeb06ebd2244d33d338e0",
@@ -55208,7 +55278,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/lgsgkr1546168257.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/nd46c71537821337.png"
   },
   {
     "id": "7dddb296a42e7a41a774b24bd1709ce1",
@@ -55261,7 +55333,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://www.thesportsdb.com/images/media/team/badge/3td0f41779180767.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/hz92od1607953467.png"
   },
   {
     "id": "1edfa5ceaa1ad2cb57df1c1b908731f6",
@@ -55296,7 +55370,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vrqanp1687734910.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/xvuwtw1420646838.png"
   },
   {
     "id": "cb77efed7e711d25a72c1a2a0a1af119",
@@ -55331,7 +55407,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/qstqqr1421609163.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rqpwtr1421434717.png"
   },
   {
     "id": "c5d95f48a16849ab6bebc68fbbfcb74a",
@@ -55366,7 +55444,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xqusqy1421724291.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/trtusv1421435081.png"
   },
   {
     "id": "17885cb8dcade8f6c3bce14b2de805e8",
@@ -55401,7 +55481,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rn0c7v1643826119.png"
   },
   {
     "id": "3e646c7479c57f5d9752d8c7dfe7059b",
@@ -55436,7 +55518,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vxppup1423669459.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/wrxssu1450018209.png"
   },
   {
     "id": "5ad8135dc2b5f27de0b777acd317855a",
@@ -55489,7 +55573,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/936t161515847222.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/upsspx1421635647.png"
   },
   {
     "id": "56e8897681915f7ec92baeee952bb1ae",
@@ -55524,7 +55610,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/6pb37b1515849026.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/lgsgkr1546168257.png"
   },
   {
     "id": "aee7eae1849ebb103b9bf233e9741392",
@@ -55577,7 +55665,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/rrpvpr1420658174.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png"
   },
   {
     "id": "2143ade9684fd876b68a4e8cbf451f05",
@@ -55630,7 +55720,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/einz3p1546172463.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/nd46c71537821337.png"
   },
   {
     "id": "fafc649c455e32a0f2ba1bd06e2039bc",
@@ -55683,7 +55775,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://www.thesportsdb.com/images/media/team/badge/3td0f41779180767.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png"
   },
   {
     "id": "84cfca14efc21363fd605508404cf1ff",
@@ -55718,7 +55812,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wrxssu1450018209.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/einz3p1546172463.png"
   },
   {
     "id": "c9d8ed8aa4889486eaf10a630138ede0",
@@ -55753,7 +55849,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/rn0c7v1643826119.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqqvpx1421434058.png"
   },
   {
     "id": "21b26266f3d78af02eb672e606275d95",
@@ -55788,7 +55886,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl"
+    "providerSportKey": "americanfootball_nfl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0mrsd41546427902.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png"
   },
   {
     "id": "ae7d5615fc569079db13e4fcafc05a5d",
@@ -55841,7 +55941,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_nfl_preseason"
+    "providerSportKey": "americanfootball_nfl_preseason",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xvuwtw1420646838.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png"
   },
   {
     "id": "9502e5e082874b731dceeef49cda8e90",
@@ -55876,7 +55978,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ufl"
+    "providerSportKey": "americanfootball_ufl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pbiyq21770670499.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/53u2201676895966.png"
   },
   {
     "id": "be815ecf22bfe282ffadc30a1fe6186c",
@@ -55911,7 +56015,9 @@
         ]
       }
     ],
-    "providerSportKey": "americanfootball_ufl"
+    "providerSportKey": "americanfootball_ufl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/go0t891676896025.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/4ysomp1770670283.png"
   },
   {
     "id": "1879f9a9ee1925232095f8ed1b3d00e6",
@@ -55946,7 +56052,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/bzjjyq1731592318.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/duu5zi1659039634.png"
   },
   {
     "id": "4e6b1b07e9dd09b9b708067f4fe08ebc",
@@ -55981,7 +56089,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/su1ks21659039646.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/e3hg551647870757.png"
   },
   {
     "id": "8c463fce665481a719384b62a1ec0e7b",
@@ -56016,7 +56126,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/742rew1659039654.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/50hxgb1659039630.png"
   },
   {
     "id": "ae9e730546bcd72f1eee56ba4f2d74f1",
@@ -56051,7 +56163,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/3zlskr1731592623.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/tvvxvp1474038810.png"
   },
   {
     "id": "d006af7fd3ab7d0eca0efd6032b03f15",
@@ -56086,7 +56200,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xpcp2f1647870746.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/psoxhx1659039658.png"
   },
   {
     "id": "d35e2da67794aaadd64b607c11fc9387",
@@ -56121,7 +56237,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ndeir91647870648.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/aoui9t1732026465.png"
   },
   {
     "id": "87916d1c0805a3f57417d6e474ebd18d",
@@ -56156,7 +56274,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/zhuq3b1659039626.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/yrg8q81659039617.png"
   },
   {
     "id": "71e562fa330b4eacc2f60368fc9fb4e0",
@@ -56191,7 +56311,9 @@
         ]
       }
     ],
-    "providerSportKey": "aussierules_afl"
+    "providerSportKey": "aussierules_afl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/y4bera1659039622.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/07uedd1659039650.png"
   },
   {
     "id": "3b66d862f77459e14d28a667b0c49146",
@@ -56244,7 +56366,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_kbo"
+    "providerSportKey": "baseball_kbo",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2qo9zp1740573854.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/7aztmc1740573842.png"
   },
   {
     "id": "0da3a022dc871df9d446d725023090ce",
@@ -56297,7 +56421,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_kbo"
+    "providerSportKey": "baseball_kbo",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/qk8erg1589709962.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ajpsiq1648069368.png"
   },
   {
     "id": "00d415358f32d33a2b8d98e6fc96ffb0",
@@ -56350,7 +56476,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_kbo"
+    "providerSportKey": "baseball_kbo",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2z389i1648069353.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/p7q92w1742225576.png"
   },
   {
     "id": "81346c79b9b66c2f9c829dbcfd2c8d99",
@@ -56403,7 +56531,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_kbo"
+    "providerSportKey": "baseball_kbo",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/kii9pd1742225451.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qcj18p1589709259.png"
   },
   {
     "id": "e8effa19d91453a4c9757e6a4725bbc4",
@@ -56456,7 +56586,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_kbo"
+    "providerSportKey": "baseball_kbo",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/5u6k511589709673.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/6gwcg81589708218.png"
   },
   {
     "id": "6adb88d48c4bcd45b3879fbd169623bd",
@@ -56509,7 +56641,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/mzt8x21655404701.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/izltsw1655402639.png"
   },
   {
     "id": "eed04b61f2d842473dfb24ead68efe3e",
@@ -56562,7 +56696,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/gwztpq1625353554.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/v8wgcc1655403474.png"
   },
   {
     "id": "5e3b2062b65bb237b07e3f815e5ee0e1",
@@ -56615,7 +56751,8 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0avb511655404464.png"
   },
   {
     "id": "b5e04f40eefba99c0d6ca711bb81a10d",
@@ -56668,7 +56805,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/4bgzkv1655402613.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/z5inb11741721941.png"
   },
   {
     "id": "8a03c584b84c2b4b4c197a904f0c628b",
@@ -56721,7 +56860,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/c8f7e81655403187.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/prqdzr1655403885.png"
   },
   {
     "id": "926191a4c8b9e9161168cdf8bbb32aae",
@@ -56774,7 +56915,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pzomwi1655402625.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/89tydn1625355545.png"
   },
   {
     "id": "e9be86bcc81e1f70cf3134d771f9bc7e",
@@ -56827,7 +56970,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/iztqdm1655403009.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/e88vby1655403408.png"
   },
   {
     "id": "d363a3cd6d01265b918181dd1d44533e",
@@ -56880,7 +57025,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0v36ho1655402896.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ov93ra1655404628.png"
   },
   {
     "id": "9e4777b777e0ad83fb0f2b862184c056",
@@ -56933,7 +57080,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/045fc01655403360.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ldht7k1655403295.png"
   },
   {
     "id": "7c781d72c1712967393dcd2bbc47c8b6",
@@ -56968,7 +57117,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/rw9p0h1741721601.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/hao4f61655404056.png"
   },
   {
     "id": "998a3952f0502a84bcf0dd79806ff854",
@@ -57021,7 +57172,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/fuimpv1655404399.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/jw5yy01655402824.png"
   },
   {
     "id": "10a8fcaaf214fd5ac47f7424b8a79d8b",
@@ -57074,7 +57227,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/j74y2w1655404235.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/wuqdht1655403029.png"
   },
   {
     "id": "545ef4688faa3b829363aaf84b9f41f6",
@@ -57127,7 +57282,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/31m48v1655402710.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qkoi9l1655403989.png"
   },
   {
     "id": "a1a4cee7a64e21282ce9853d8183fb99",
@@ -57180,7 +57337,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pxwjly1655404224.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/i0reak1655404553.png"
   },
   {
     "id": "9f6647f5d619c63d9274b1ffbc68e631",
@@ -57233,7 +57392,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_milb"
+    "providerSportKey": "baseball_milb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/lhqta21655403128.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/8fjsl91625355786.png"
   },
   {
     "id": "507ec1a59ca1a2aa1386a2dbe2fbfa7b",
@@ -57286,7 +57447,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/littyt1554031623.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/9dib6o1554032173.png"
   },
   {
     "id": "74f3bd29e00a7932dfcd53369f030251",
@@ -57339,7 +57502,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/3xrldf1617528682.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/6wt1cn1617527530.png"
   },
   {
     "id": "0aecf375a07f34755e00a1ba7fb63c16",
@@ -57392,7 +57557,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/stpsus1425120215.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ytywvu1431257088.png"
   },
   {
     "id": "7b042ea490ee94f3a5fae88a241e0c70",
@@ -57445,7 +57612,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wpqrut1423694764.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/0722fs1546001701.png"
   },
   {
     "id": "286c7b1ca015708320800e8f2a9bf4de",
@@ -57498,7 +57667,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqwwxx1423478766.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/3zvzao1640964590.png"
   },
   {
     "id": "996682744f55836e619953bc8cfd16ef",
@@ -57551,7 +57722,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wspusr1431538832.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ii3rz81554031260.png"
   },
   {
     "id": "d151ae8d551dafc26e657e34d0b4cff3",
@@ -57604,7 +57777,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/yjs76e1617811496.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/f9zk3l1617527686.png"
   },
   {
     "id": "6c525054ef6bbee384a6400f05a7ef19",
@@ -57657,7 +57832,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/necd5v1521905719.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/yyz5dh1554140884.png"
   },
   {
     "id": "28a4a80f7b04c4d03f249c8cb82ad092",
@@ -57710,7 +57887,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/08kh2a1595775193.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/team/badge/ov3qi41778132254.png"
   },
   {
     "id": "748fa098c21c17715ebec1653befb6c2",
@@ -57763,7 +57942,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/uvyvyr1424003273.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qt9qki1521893151.png"
   },
   {
     "id": "7303b906ec24908bb3cff071bf340eec",
@@ -57816,7 +57997,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wxbe071521892391.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/cyvrv31741640777.png"
   },
   {
     "id": "e73fadc7fb7502608603de6dfce34fac",
@@ -57869,7 +58052,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/miwigx1521893583.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/kw6uqr1617527138.png"
   },
   {
     "id": "8e66855f2231ccc68e5ba0ad7f2091a5",
@@ -57922,7 +58107,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vswsvx1432577476.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/r7q6ko1687608395.png"
   },
   {
     "id": "4ff70f42672aed275f8d6a3a5c9f5321",
@@ -57975,7 +58162,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xe5wlo1713861863.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/team/badge/32uxn21778269451.png"
   },
   {
     "id": "2fa44becfc394386d661eff0256111d3",
@@ -58028,7 +58217,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/39x9ph1521903933.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rxqspq1431540337.png"
   },
   {
     "id": "73486391be3ca754c34d1a20ca7fbf6c",
@@ -58081,7 +58272,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wpqrut1423694764.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/0722fs1546001701.png"
   },
   {
     "id": "d1a33cbd30c6a1734e919a36c80b83b5",
@@ -58134,7 +58327,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/littyt1554031623.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/9dib6o1554032173.png"
   },
   {
     "id": "bee59a7dbd5441cad240f0571973b255",
@@ -58187,7 +58382,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/necd5v1521905719.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/yyz5dh1554140884.png"
   },
   {
     "id": "9e7ec8d783bb18b8a2775b32d91e9824",
@@ -58240,7 +58437,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/39x9ph1521903933.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rxqspq1431540337.png"
   },
   {
     "id": "31eba8fe40243a3e0e029a8b9949d756",
@@ -58293,7 +58492,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/3xrldf1617528682.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/6wt1cn1617527530.png"
   },
   {
     "id": "3ca053166f16be8d40c5adfe1a2bd8aa",
@@ -58346,7 +58547,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/stpsus1425120215.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ytywvu1431257088.png"
   },
   {
     "id": "859f56a081b813c2f16240bc2687f241",
@@ -58399,7 +58602,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqwwxx1423478766.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/3zvzao1640964590.png"
   },
   {
     "id": "682766eb5df9e22bd3689cd7ae59899b",
@@ -58452,7 +58657,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wspusr1431538832.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ii3rz81554031260.png"
   },
   {
     "id": "7440e18762df663a2c7e8fe443772540",
@@ -58505,7 +58712,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/yjs76e1617811496.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/f9zk3l1617527686.png"
   },
   {
     "id": "2b93a316b12e1dddfcb752bed7aa43d6",
@@ -58540,7 +58749,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/08kh2a1595775193.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/team/badge/ov3qi41778132254.png"
   },
   {
     "id": "9fc40cd3ea77063176a73e678395da73",
@@ -58593,7 +58804,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/uvyvyr1424003273.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qt9qki1521893151.png"
   },
   {
     "id": "54b22c486dccf3bc503a2b33ec17f157",
@@ -58628,7 +58841,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wxbe071521892391.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/cyvrv31741640777.png"
   },
   {
     "id": "0823b4e80b16060db3aba85b41348d18",
@@ -58681,7 +58896,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/miwigx1521893583.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/kw6uqr1617527138.png"
   },
   {
     "id": "fef20c017b9718b5324615b7ba93f173",
@@ -58734,7 +58951,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vswsvx1432577476.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/r7q6ko1687608395.png"
   },
   {
     "id": "f8b638ebe3a01e645658b4699fd18198",
@@ -58787,7 +59006,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_mlb"
+    "providerSportKey": "baseball_mlb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xe5wlo1713861863.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/team/badge/32uxn21778269451.png"
   },
   {
     "id": "266460f5d3c80faadb1e141706824f30",
@@ -58840,7 +59061,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_npb"
+    "providerSportKey": "baseball_npb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ryyku01576013231.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/na10tn1576008207.png"
   },
   {
     "id": "b781e505a41d7c380041f6fbf1e65be6",
@@ -58893,7 +59116,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_npb"
+    "providerSportKey": "baseball_npb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/jli5jv1576009060.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ampozy1576009547.png"
   },
   {
     "id": "d91226a1d8d705edf2ed32af591c8058",
@@ -58946,7 +59171,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_npb"
+    "providerSportKey": "baseball_npb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/h2jhos1576009994.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/onmvow1576012163.png"
   },
   {
     "id": "62ab350530923a975b777148cd91df3d",
@@ -58999,7 +59226,8 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_npb"
+    "providerSportKey": "baseball_npb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/bv50e51576010505.png"
   },
   {
     "id": "47e1f80311de53995cb181fea2075d13",
@@ -59052,7 +59280,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_npb"
+    "providerSportKey": "baseball_npb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0qyqs41576014298.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/53lv6f1576011517.png"
   },
   {
     "id": "c64bfe6eb90708f634aec5fde3434f32",
@@ -59105,7 +59335,9 @@
         ]
       }
     ],
-    "providerSportKey": "baseball_npb"
+    "providerSportKey": "baseball_npb",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/fuhqf21576013789.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qx24pm1576012656.png"
   },
   {
     "id": "1aae688472781f1a1aaf3efdb38e884b",
@@ -59140,7 +59372,9 @@
         ]
       }
     ],
-    "providerSportKey": "basketball_nba"
+    "providerSportKey": "basketball_nba",
+    "homeLogo": "https://www.thesportsdb.com/images/media/team/badge/89mwqb1778227087.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/team/badge/4k8obt1778226764.png"
   },
   {
     "id": "b84399295651497ab1b5785ed039e360",
@@ -59193,7 +59427,9 @@
         ]
       }
     ],
-    "providerSportKey": "basketball_wnba"
+    "providerSportKey": "basketball_wnba",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wtqjpk1702757695.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/p4xzce1552679905.png"
   },
   {
     "id": "759f97a0437a8ff763e5f24897639896",
@@ -59246,7 +59482,9 @@
         ]
       }
     ],
-    "providerSportKey": "basketball_wnba"
+    "providerSportKey": "basketball_wnba",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2n9gep1552586413.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/h4e2t21552585926.png"
   },
   {
     "id": "6f8192d89fec2aeb42878b8706254d5d",
@@ -59299,7 +59537,9 @@
         ]
       }
     ],
-    "providerSportKey": "basketball_wnba"
+    "providerSportKey": "basketball_wnba",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/24p2fj1738315525.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/0wqbhm1752599825.png"
   },
   {
     "id": "185804ff5ba81d1b76a30f51bcaa1d96",
@@ -59352,7 +59592,9 @@
         ]
       }
     ],
-    "providerSportKey": "basketball_wnba"
+    "providerSportKey": "basketball_wnba",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/j70g2o1624031498.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/jnvk6x1741462255.png"
   },
   {
     "id": "0b6c0ff40218df23896f3e4b4fd0c5fa",
@@ -59405,7 +59647,9 @@
         ]
       }
     ],
-    "providerSportKey": "basketball_wnba"
+    "providerSportKey": "basketball_wnba",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/s3y5hx1702757871.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/team/badge/hoqyza1778258347.png"
   },
   {
     "id": "8a807081963401594f51f791acf1a8b5",
@@ -59458,7 +59702,9 @@
         ]
       }
     ],
-    "providerSportKey": "basketball_wnba"
+    "providerSportKey": "basketball_wnba",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ygz07x1624031566.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/bcjbjy1767191655.png"
   },
   {
     "id": "35d1ab61f71c865dd46ee70123cd9c6e",
@@ -59499,7 +59745,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/thumb/nrkg8n1756761603.jpg"
   },
   {
     "id": "e9c653d057629428102bdeeb9beaa0af",
@@ -59821,7 +60068,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/pidfe61695381698.png"
   },
   {
     "id": "1b2ba990352e1855979d183947fb9880",
@@ -59938,7 +60186,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/thumb/5tkq3m1626365126.jpg"
   },
   {
     "id": "cf31ea20e37ce8863d283b7d1b295725",
@@ -60102,7 +60351,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/thumb/9mgv4l1740006176.jpg"
   },
   {
     "id": "7f092992fb2ce4d52b627d873938b61d",
@@ -60155,7 +60405,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/rwh0op1706296994.png"
   },
   {
     "id": "7e5b68e2ba1f5fc01f6a8e8bb2affb06",
@@ -60395,7 +60646,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/thumb/pns5v21740006210.jpg"
   },
   {
     "id": "502d2c61988ef75ad26f5941db6272ee",
@@ -60436,7 +60688,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/awqckc1555409653.png"
   },
   {
     "id": "30ef422e4011f94920c5ab5ebf5323c7",
@@ -60477,7 +60730,9 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/k6bx7r1772809393.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9bb2pn1706345610.png"
   },
   {
     "id": "58d68b92c8aed3589e10353cef31d60b",
@@ -60559,7 +60814,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/6h5zs01740307820.png"
   },
   {
     "id": "d7b1b50d50eebf7ead38093127a2e60d",
@@ -60600,7 +60856,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/k6bx7r1772809393.png"
   },
   {
     "id": "fa630e1fbd4d510da953c4a68a260a4f",
@@ -60641,7 +60898,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/ooajud1703879434.png"
   },
   {
     "id": "998744bb6115b9e94592a4b07eddc651",
@@ -60723,7 +60981,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/gdm01a1574862921.png"
   },
   {
     "id": "f449b69f6dbe21da3b884fea9f5d9a5c",
@@ -60764,7 +61023,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://www.thesportsdb.com/images/media/player/cutout/exjhqw1776764088.png"
   },
   {
     "id": "ee4fe821a25ab304aa5274dde093631a",
@@ -60805,7 +61065,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/qvl9gd1761511248.png"
   },
   {
     "id": "9ef034eafba0fda40e771fafba89f84f",
@@ -60846,7 +61107,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/8qyaon1740309806.png"
   },
   {
     "id": "c5bfb203d874ed984259a6019def87eb",
@@ -60887,7 +61149,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/22n6e81688288305.png"
   },
   {
     "id": "6a95b0ad7454c465184cc92dbfd74432",
@@ -60928,7 +61191,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/rs8j8o1776082856.png"
   },
   {
     "id": "ab9f77b00e610e60a527446d67690fa2",
@@ -60969,7 +61233,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/d8yq0v1703056328.png"
   },
   {
     "id": "8176383b49431360106353bbfa267e67",
@@ -61010,7 +61275,8 @@
         ]
       }
     ],
-    "providerSportKey": "boxing_boxing"
+    "providerSportKey": "boxing_boxing",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9bb2pn1706345610.png"
   },
   {
     "id": "304f7b78a9778dc325ac931d43380852",
@@ -61045,7 +61311,9 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_odi"
+    "providerSportKey": "cricket_odi",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/1x0a681646775209.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/i5fqg01646775193.png"
   },
   {
     "id": "c58d8af686c5d6b2e01dfeb9caa22fe4",
@@ -61080,7 +61348,8 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_odi"
+    "providerSportKey": "cricket_odi",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/03o8241646775177.png"
   },
   {
     "id": "004273cdeb9f66857e8fd209d510c677",
@@ -61115,7 +61384,9 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_t20_blast"
+    "providerSportKey": "cricket_t20_blast",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pl0yk51512933420.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rlfxzh1512937652.png"
   },
   {
     "id": "6ebe3a5d818d5b4c2b1a49ad12fd9e5b",
@@ -61150,7 +61421,9 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_t20_blast"
+    "providerSportKey": "cricket_t20_blast",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ba0m9n1546518813.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rdsttx1590355851.png"
   },
   {
     "id": "4de3bd6d2851810582cbe79fad2b930f",
@@ -61185,7 +61458,9 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_t20_blast"
+    "providerSportKey": "cricket_t20_blast",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vzixwm1671721158.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/cws8lr1653500313.png"
   },
   {
     "id": "c01d201153ee257fc047c0c4fd66c3dc",
@@ -61220,7 +61495,9 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_t20_blast"
+    "providerSportKey": "cricket_t20_blast",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/i4la7t1512933445.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/m1ljqz1546518856.png"
   },
   {
     "id": "3f55bbc0bb0b771f14a1eb341ff8229f",
@@ -61255,7 +61532,9 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_t20_blast"
+    "providerSportKey": "cricket_t20_blast",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/chwe901512937550.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/391faz1512937726.png"
   },
   {
     "id": "c4aadeb306fe6353dc07eadb7c63a28c",
@@ -61296,7 +61575,8 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_test_match"
+    "providerSportKey": "cricket_test_match",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/1yyh9s1646775166.png"
   },
   {
     "id": "a28128ebc96a0738f5c0da59e4650ab1",
@@ -61337,7 +61617,9 @@
         ]
       }
     ],
-    "providerSportKey": "cricket_test_match"
+    "providerSportKey": "cricket_test_match",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/donl7g1646775159.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/bzu3v71646775261.png"
   },
   {
     "id": "db044fdc746fbc96eecdec74de78a2e2",
@@ -61396,7 +61678,9 @@
         ]
       }
     ],
-    "providerSportKey": "handball_germany_bundesliga"
+    "providerSportKey": "handball_germany_bundesliga",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/gcp6ko1643117660.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/j0ozde1567031362.png"
   },
   {
     "id": "a67f08f5fa9922c4ea53360ece091f57",
@@ -61455,7 +61739,9 @@
         ]
       }
     ],
-    "providerSportKey": "handball_germany_bundesliga"
+    "providerSportKey": "handball_germany_bundesliga",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0bgxd91567541978.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/pd6juv1643118768.png"
   },
   {
     "id": "78caf06540628438bd188e25c3222107",
@@ -61573,7 +61859,9 @@
         ]
       }
     ],
-    "providerSportKey": "handball_germany_bundesliga"
+    "providerSportKey": "handball_germany_bundesliga",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2yin7i1567542157.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ia2c4n1567621688.png"
   },
   {
     "id": "9c297abf814a638046ff78e5ffe84c49",
@@ -61632,7 +61920,9 @@
         ]
       }
     ],
-    "providerSportKey": "handball_germany_bundesliga"
+    "providerSportKey": "handball_germany_bundesliga",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/7fk4f61643120710.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/o8ikpz1662032900.png"
   },
   {
     "id": "05db23b82d06c7b5a49c0b8be8bed745",
@@ -61673,7 +61963,9 @@
         ]
       }
     ],
-    "providerSportKey": "handball_germany_bundesliga"
+    "providerSportKey": "handball_germany_bundesliga",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/y5e7s41643118034.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/300ejw1643119992.png"
   },
   {
     "id": "36c7e4b73886bc861d39df8f6b409354",
@@ -61714,7 +62006,8 @@
         ]
       }
     ],
-    "providerSportKey": "handball_germany_bundesliga"
+    "providerSportKey": "handball_germany_bundesliga",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/y0dzfu1694678887.png"
   },
   {
     "id": "e3bc487a08fc9ca8a5d748c3de739e4a",
@@ -61755,7 +62048,9 @@
         ]
       }
     ],
-    "providerSportKey": "handball_germany_bundesliga"
+    "providerSportKey": "handball_germany_bundesliga",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/qxfbmc1567030924.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/kz5cc71567091572.png"
   },
   {
     "id": "73c2541fca76d605d8ebe0b8ad57544d",
@@ -61814,7 +62109,9 @@
         ]
       }
     ],
-    "providerSportKey": "icehockey_ahl"
+    "providerSportKey": "icehockey_ahl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xszjsd1582218558.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/nf1kma1582218854.png"
   },
   {
     "id": "abbdc73ed5eb4c07ac843c0971000ffa",
@@ -61873,7 +62170,8 @@
         ]
       }
     ],
-    "providerSportKey": "icehockey_ahl"
+    "providerSportKey": "icehockey_ahl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/tjhxa81704880725.png"
   },
   {
     "id": "64f4fd5f7454c1585d209d91e36902eb",
@@ -61926,7 +62224,9 @@
         ]
       }
     ],
-    "providerSportKey": "icehockey_nhl"
+    "providerSportKey": "icehockey_nhl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/v07m3x1547232585.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/7fd4521619536689.png"
   },
   {
     "id": "c844c5cd2da5627ae72bbd5fb01518da",
@@ -61961,7 +62261,9 @@
         ]
       }
     ],
-    "providerSportKey": "lacrosse_pll"
+    "providerSportKey": "lacrosse_pll",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/dxr1za1707919860.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/m8ivs71707919556.png"
   },
   {
     "id": "93c42af6fc8d0813504651bdafe3433e",
@@ -61996,7 +62298,9 @@
         ]
       }
     ],
-    "providerSportKey": "lacrosse_pll"
+    "providerSportKey": "lacrosse_pll",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/jvt49r1707919704.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/h4dbdm1707920143.png"
   },
   {
     "id": "f8a204014b836e7fa5a8d083c806be24",
@@ -62031,7 +62335,9 @@
         ]
       }
     ],
-    "providerSportKey": "lacrosse_pll"
+    "providerSportKey": "lacrosse_pll",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/dxr1za1707919860.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/k2hm2e1707920030.png"
   },
   {
     "id": "e37ef5785115e4e85497415dab020164",
@@ -62066,7 +62372,9 @@
         ]
       }
     ],
-    "providerSportKey": "lacrosse_pll"
+    "providerSportKey": "lacrosse_pll",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vq47ut1707920192.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ist25n1707919826.png"
   },
   {
     "id": "08679385015009982654f6d225a8c702",
@@ -62119,7 +62427,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/shwb1b1706003979.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/thumb/ekcz5e1756823885.jpg"
   },
   {
     "id": "20ed97f62101fe382c07288a90f4be6d",
@@ -62172,7 +62482,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/vrmuqb1732796977.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/cma3jl1732795183.png"
   },
   {
     "id": "357b754688bbb0e3c6c8db405d85ab86",
@@ -62225,7 +62537,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/1zpxo31650211603.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/j3dpra1732797043.png"
   },
   {
     "id": "0c94edba010c216c1f1c254aa1976365",
@@ -62278,7 +62592,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/3o9gm81712753579.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/via9531725831048.png"
   },
   {
     "id": "4dce7e416a60d1f8ddf8862c6c1bd10c",
@@ -62331,7 +62647,8 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/8fk4ya1732797010.png"
   },
   {
     "id": "c2be3a28c6eddb533967d1ce14a4bcd5",
@@ -62384,7 +62701,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/hyrlkk1732796433.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/bn7uhb1692195237.png"
   },
   {
     "id": "b25817c43f87ecf68e3c7f8f42324100",
@@ -62437,7 +62756,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/h0mov71732796102.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/azna0p1732797065.png"
   },
   {
     "id": "f6fe7579a793a51263060d78854c4cde",
@@ -62490,7 +62811,8 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/q3x0px1732797031.png"
   },
   {
     "id": "f62a5567bcb87d778dd662328d9662fb",
@@ -62543,7 +62865,8 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/zvss741732797020.png"
   },
   {
     "id": "c224e8fe285ab0d16fdb574234f6dec8",
@@ -62596,7 +62919,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/3q80o31732796230.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/12szhn1732796992.png"
   },
   {
     "id": "25554ee7fbb7765f77c910d20b453f0f",
@@ -62649,7 +62974,8 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/zi0qk71732796891.png"
   },
   {
     "id": "064ee15869be68bc9acbf2dec5843842",
@@ -62702,7 +63028,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/2ni1lw1725818419.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/thumb/cjv6gl1558783909.jpg"
   },
   {
     "id": "c8dbccd9eda383d9c76dc15e4a3c96a7",
@@ -62737,7 +63065,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/3a9h2j1728206945.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/qjlbf01732795245.png"
   },
   {
     "id": "b1a902b892f239a0404c75781af22e87",
@@ -62772,7 +63102,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/3a9h2j1728206945.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/nmbjvy1736180733.png"
   },
   {
     "id": "e7a638f5736f2d0edc762b56fc404f74",
@@ -62807,7 +63139,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/3a9h2j1728206945.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/tug6fa1759696283.png"
   },
   {
     "id": "a3c203ddf1665927314db9cc73ede377",
@@ -62842,7 +63176,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/hl8yyw1675769669.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/qjlbf01732795245.png"
   },
   {
     "id": "4b4920d2454497566b519a271f9e1e93",
@@ -62877,7 +63213,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/thumb/jjsp1v1527594532.jpg",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/7vltk91725816828.png"
   },
   {
     "id": "9cf76c6ecde4824965ca04da644dfefa",
@@ -62912,7 +63250,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/1hfar81732797009.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/lub49h1732796289.png"
   },
   {
     "id": "2f1aabeeefbe5b02db96846ac879a6ae",
@@ -62947,7 +63287,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/nrz74n1593631555.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/player/cutout/9ezxj31777027703.png"
   },
   {
     "id": "54eb45b661945af7aa7da285a12e835c",
@@ -62982,7 +63324,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/q2nay81732797019.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/kkmsyw1732796365.png"
   },
   {
     "id": "20d0d02349fe04d63631b1e3f1879fa3",
@@ -63017,7 +63361,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/cki55v1692640323.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/noezsj1732794895.png"
   },
   {
     "id": "1e972b73d422aa4cadb9185ca87c3c93",
@@ -63052,7 +63398,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/3a9h2j1728206945.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/t1q1211680086818.png"
   },
   {
     "id": "e34a17d5cf2a82a5161a54631e06770c",
@@ -63087,7 +63435,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/cz7spq1706003785.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/vstc9p1690818737.png"
   },
   {
     "id": "891965c02d665af81f9308428b8f33e7",
@@ -63122,7 +63472,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/m7byug1726477092.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/fugsmk1725814765.png"
   },
   {
     "id": "ee37a39c1d8a992a65c6ff399fa48c63",
@@ -63157,7 +63509,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/3u7oun1594819423.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9mg5hg1732797077.png"
   },
   {
     "id": "1ca0b61248b7eb5feef12a04661003e0",
@@ -63192,7 +63546,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/e53fep1725180232.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/t1q1211680086818.png"
   },
   {
     "id": "702055a9e35d07bddba5fd446eef719c",
@@ -63227,7 +63583,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/h24pnq1705940288.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/dxomp91725829944.png"
   },
   {
     "id": "ee6203b3168fb34a63a60ad51dd01050",
@@ -63262,7 +63620,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/gmtyxk1593614518.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9irsb21725791466.png"
   },
   {
     "id": "05b3dc3515568962c8e7351c06ff69c0",
@@ -63297,7 +63657,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/ecb6yk1726476068.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/zsa8s41594584523.png"
   },
   {
     "id": "3b755bb89b4450d72825f3e7327cb547",
@@ -63332,7 +63694,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/0k5sik1712737576.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/6rf2ta1772397924.png"
   },
   {
     "id": "96b80306b34d20d1370629a7469f676d",
@@ -63367,7 +63731,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/u4vd521724261695.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/dz7psv1732796333.png"
   },
   {
     "id": "b1ae0b4452457fa13a37445b78f46930",
@@ -63437,7 +63803,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/gusinv1706002304.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/1cqvea1733497490.png"
   },
   {
     "id": "2c982ef7f30e521915fb0c82ffdaf4ba",
@@ -63478,7 +63846,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/08hp1u1604693310.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/gphp791594584009.png"
   },
   {
     "id": "423b105e6762942c1908a6133f044fde",
@@ -63513,7 +63883,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/ifm7ht1705939905.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/693bru1593611045.png"
   },
   {
     "id": "35a63dcdef5f848c9fee8cc366f5b6fb",
@@ -63548,7 +63920,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/hl8yyw1675769669.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9vbdl11728207930.png"
   },
   {
     "id": "f09d8755975042bcd105a5ab258253ff",
@@ -63583,7 +63957,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/cz7spq1706003785.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/z4bjnv1732795183.png"
   },
   {
     "id": "be9636f30a46a5e2c5f9c869b685b788",
@@ -63618,7 +63994,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/mttw6v1732796326.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9mg5hg1732797077.png"
   },
   {
     "id": "944dd8a4945ba0df2c4370de73387c5d",
@@ -63653,7 +64031,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/08hp1u1604693310.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/x2wuht1701423105.png"
   },
   {
     "id": "b40b838fc3b12e959a10d678ed58321f",
@@ -63694,7 +64074,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/h24pnq1705940288.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/693bru1593611045.png"
   },
   {
     "id": "fa2d7e022c2c47e0855f04084d08f163",
@@ -63735,7 +64117,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/e53fep1725180232.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/t1q1211680086818.png"
   },
   {
     "id": "8488c2a34f7093513d463d4b2730572e",
@@ -63770,7 +64154,8 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9isx081732796281.png"
   },
   {
     "id": "e697d4df59aa825d85fa764db999757f",
@@ -63805,7 +64190,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/2r3vm91705939760.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/9isx081732796281.png"
   },
   {
     "id": "ead94688d843f96aba0f1486ce663b61",
@@ -63840,7 +64227,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/2r3vm91705939760.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/ho3t9t1707037656.png"
   },
   {
     "id": "fcee675894f8285afc8daf0808198b74",
@@ -63875,7 +64264,9 @@
         ]
       }
     ],
-    "providerSportKey": "mma_mixed_martial_arts"
+    "providerSportKey": "mma_mixed_martial_arts",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/h24pnq1705940288.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/693bru1593611045.png"
   },
   {
     "id": "97a1621b5db62cb62ffea713662f64db",
@@ -63916,7 +64307,9 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/um6zs91754222634.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/0m4unp1552072677.png"
   },
   {
     "id": "df96b83838a1231d09e5d544de0069b5",
@@ -63957,7 +64350,9 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/hpdn401646347751.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/aes2o51646347790.png"
   },
   {
     "id": "d045db5051907a9f3163048a555e4c95",
@@ -63998,7 +64393,9 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/54ebov1768508580.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/by299w1646347883.png"
   },
   {
     "id": "a8c776aaf3d5a62608a7ff4904f9d741",
@@ -64039,7 +64436,9 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/q6xu7c1646347820.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/tyoy421672068536.png"
   },
   {
     "id": "15f4c93f6011a4fe44b609972bbe5485",
@@ -64080,7 +64479,9 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/yjgl741768487372.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/4qqmp81646347724.png"
   },
   {
     "id": "293da61a310a99b2f5914b088a70a2a0",
@@ -64121,7 +64522,9 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/cs6i6f1646347894.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/zjh0jo1771495164.png"
   },
   {
     "id": "6cead10b1cba778653b6b5aa7abce098",
@@ -64162,7 +64565,8 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/2dcs6y1646347870.png"
   },
   {
     "id": "374dd47f0dd1f2cbdfd737973a5f0b25",
@@ -64203,7 +64607,9 @@
         ]
       }
     ],
-    "providerSportKey": "rugbyleague_nrl"
+    "providerSportKey": "rugbyleague_nrl",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ggzq4e1768487178.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/5tvma21646347846.png"
   },
   {
     "id": "5f53708f98ace903914ecddca6a9fcc3",
@@ -64244,7 +64650,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/fhrc6i1560791704.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/1ntter1766506778.png"
   },
   {
     "id": "468d40850db8507bc33dcc0acc63239a",
@@ -64303,7 +64711,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/r11mld1766506200.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/xp2z9j1740846583.png"
   },
   {
     "id": "1dc3962b3ca1dca43a24dde2dffd68d8",
@@ -64344,7 +64754,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vpypuq1472069179.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/0kt1ah1688106304.png"
   },
   {
     "id": "6ed93fc75dd01a730ea85844112a93de",
@@ -64403,7 +64815,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/21f0oi1597948195.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/l7382k1766505911.png"
   },
   {
     "id": "3acf202e1b7e37a33ad88dcb0076e95b",
@@ -64462,7 +64876,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/nwd4ns1740851638.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/bs5mbw1733004596.png"
   },
   {
     "id": "6a05d1cdde0f4b3e56a40af59b04ec25",
@@ -64503,7 +64919,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wbss4d1644929547.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ykbxfa1766506334.png"
   },
   {
     "id": "54e430dfd6622d6fcad84f9e439ad2a0",
@@ -64562,7 +64980,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wywuwv1464886832.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/tosmdr1532853458.png"
   },
   {
     "id": "58c45c4094e355835444bbd2c6548d51",
@@ -64603,7 +65023,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_brazil_serie_b"
+    "providerSportKey": "soccer_brazil_serie_b",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/tyrbls1545421563.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/k8vus61583251023.png"
   },
   {
     "id": "c18c7329eae615997e7a267a02644d75",
@@ -64644,7 +65066,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/xbowln1672950178.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/vs7mxv1677600646.png"
   },
   {
     "id": "ca869d54dfd415fecc4c7d55f0479a5f",
@@ -64685,7 +65109,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://www.thesportsdb.com/images/media/team/badge/3yo4ag1779074331.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/62site1756091114.png"
   },
   {
     "id": "9f5f7484ef616d763bba96f2c19cc500",
@@ -64726,7 +65152,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2xvoy41754042820.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/36tqoo1602187477.png"
   },
   {
     "id": "680be85417dfe169c3ec4d7957889318",
@@ -64767,7 +65195,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0jpiwm1610649915.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/uhzow91736214236.png"
   },
   {
     "id": "9101a91ea3376123343cd2dec768de5b",
@@ -64808,7 +65238,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/bn8l9d1719394347.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/1bd0ws1706521384.png"
   },
   {
     "id": "f4ab9012b756da3276099f46202b6753",
@@ -64849,7 +65281,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vadt5t1769834071.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/po0o3c1578347873.png"
   },
   {
     "id": "1a748b749c315316c21d620c9b360aef",
@@ -64890,7 +65324,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/fyj9u51602187758.png"
   },
   {
     "id": "0089f4615635cb488f1c3161f7aef5c9",
@@ -64931,7 +65366,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/b2cnht1602186172.png"
   },
   {
     "id": "4afb8fd6e5126143314a536421e59a31",
@@ -64972,7 +65408,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_chile_campeonato"
+    "providerSportKey": "soccer_chile_campeonato",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/po0o3c1578347873.png"
   },
   {
     "id": "13342042edf06671a7e285f7d4c18d9e",
@@ -65013,7 +65450,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/qzq6nw1654864098.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/bze3ex1738388987.png"
   },
   {
     "id": "2902278cd4efc15094688fa758012d7b",
@@ -65054,7 +65493,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/u35y2t1726937530.png"
   },
   {
     "id": "fa77d99e793c0a285d581daf6dddfa23",
@@ -65095,7 +65535,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/jsv5901716654183.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/r20v6x1713897058.png"
   },
   {
     "id": "dbf5d0b326f106f87fe5cb7a423fd002",
@@ -65136,7 +65578,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/mc9rzf1699122167.png",
+    "awayLogo": "https://www.thesportsdb.com/images/media/team/badge/d9evs91776534441.png"
   },
   {
     "id": "36ceee66d10d3c4b102db182c090f4fd",
@@ -65177,7 +65621,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ozo8ho1580929523.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/3c4tq21619033006.png"
   },
   {
     "id": "f677ea544501640db24374645fed80c4",
@@ -65218,7 +65664,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/49506y1726936140.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rjf7dg1619096344.png"
   },
   {
     "id": "a9d43ba344f25fd655cc1189aefa4b7e",
@@ -65259,7 +65707,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/6gnvpg1680389414.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/dhlhdy1654266653.png"
   },
   {
     "id": "33346b1b2f8b3bff8a6863d2964c5f98",
@@ -65300,7 +65750,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_china_superleague"
+    "providerSportKey": "soccer_china_superleague",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/isc1241738389501.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/p0r1bj1654266974.png"
   },
   {
     "id": "d795b12013a333298079df3a5abd260d",
@@ -65341,7 +65793,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/xkxqtz1652126507.png",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/vsqwqp1473538105.png"
   },
   {
     "id": "2931578ca874ba48e46a61c94fb56fcd",
@@ -65382,7 +65836,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/lbs14n1769317149.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/b2cnht1602186172.png"
   },
   {
     "id": "05412ae8c72a3f9765da81074803d9c2",
@@ -65423,7 +65879,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/y6q1ds1769660256.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/vvuvps1473538042.png"
   },
   {
     "id": "76fe0ea572193cddb505ae4ba43cd069",
@@ -65464,7 +65922,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/upsvvu1473538059.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/syptwx1473538074.png"
   },
   {
     "id": "a19bccbe8889dfa8d2dafbdaa57749a0",
@@ -65505,7 +65965,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/4bscjt1766423328.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qku0lv1737622736.png"
   },
   {
     "id": "0c574a337d17da360cbb2e4c44b637ee",
@@ -65546,7 +66008,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pf08dq1760634366.png"
   },
   {
     "id": "5383e72b96aae89323d03f4cd36283e2",
@@ -65605,7 +66068,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qgzi2b1769406125.png",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/stvvwp1473538082.png"
   },
   {
     "id": "dd06fab13c4861592da993d2d742c27b",
@@ -65664,7 +66129,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_libertadores"
+    "providerSportKey": "soccer_conmebol_copa_libertadores",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/pw8uo11765900737.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/5tf5ch1736404372.png"
   },
   {
     "id": "e7447f015dd48d3b857cc22d63cb8479",
@@ -65723,7 +66190,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/bm7krb1775741582.png"
   },
   {
     "id": "9496a9a5346f72dd35cffb800eac7fb5",
@@ -65782,7 +66250,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ive4ya1766423194.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/2p7tl41701423595.png"
   },
   {
     "id": "e38b938069d601692760954037d7ba59",
@@ -65841,7 +66311,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/yxi2wi1736387630.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/krryg71765858882.png"
   },
   {
     "id": "b37487abface74863d8695e5365c3d31",
@@ -65900,7 +66372,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/16vs771629122765.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/e87b3o1639000318.png"
   },
   {
     "id": "04fd513adb50860e553553a771be0887",
@@ -65959,7 +66433,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/f50g3b1678411414.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ynqlxo1630521109.png"
   },
   {
     "id": "ebf2e592382079b9c0f291241cb5acb3",
@@ -66018,7 +66494,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ddty0w1769146364.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/yla9k51734242161.png"
   },
   {
     "id": "03868280fe8e1f360f9faa1d11407af7",
@@ -66077,7 +66555,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/et9aaf1768236511.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/j8xk9g1679447486.png"
   },
   {
     "id": "4934cf8f31416013ec91adee3a0f4794",
@@ -66118,7 +66598,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_conmebol_copa_sudamericana"
+    "providerSportKey": "soccer_conmebol_copa_sudamericana",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/0o5jrz1579798499.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/uvpwyt1473538089.png"
   },
   {
     "id": "80d82d1113934bfbea4ce8daf37a2433",
@@ -66682,7 +67164,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/7r89rg1526727277.png"
   },
   {
     "id": "c54f00b11925751d2b62988775c6c239",
@@ -66723,7 +67206,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/5jn0o71593280376.png"
   },
   {
     "id": "fbfb95c62003fd6d828b309f96ee1f9b",
@@ -66764,7 +67248,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/uheyzo1742102234.png"
   },
   {
     "id": "64b91c5f2db61c7358a4f05459e83c52",
@@ -66805,7 +67290,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/24xwpq1594125742.png"
   },
   {
     "id": "ec51b9c44ad5e34552f3ab53f7262813",
@@ -66864,7 +67350,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/uttpvw1455465617.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/1yyh9s1646775166.png"
   },
   {
     "id": "73a4fcd14cc9766b9b9bfd50b8ca153a",
@@ -66964,7 +67452,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/aqidfn1742100110.png"
   },
   {
     "id": "f31b2ee9e1cc6f7e641467f8237eaa21",
@@ -67005,7 +67494,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rrwpry1455460218.png"
   },
   {
     "id": "25161cf6cf0cd9be17ae2e7e224a1f45",
@@ -67064,7 +67554,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/874p631628721400.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/59fo2s1742100034.png"
   },
   {
     "id": "6cc871c121a1869b4612d3fb22fa9d55",
@@ -67123,7 +67615,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/s85jjw1728749022.png"
   },
   {
     "id": "689096c8cd7e2753b9fec95321943c5d",
@@ -67205,7 +67698,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/asp2ck1715849700.png"
   },
   {
     "id": "22083e7a8e5362c711bc05c1e1319a1f",
@@ -67246,7 +67740,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/u5bgze1597943605.png"
   },
   {
     "id": "66ebb9e3f949caded535d97ce686ca09",
@@ -67804,7 +68299,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/7r89rg1526727277.png"
   },
   {
     "id": "73529a242e319a86bf3d00ddb4accc37",
@@ -67863,7 +68359,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/24xwpq1594125742.png"
   },
   {
     "id": "5f92f257386ec5bf7c6e2498a21f3a61",
@@ -67922,7 +68419,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/uttpvw1455465617.png"
   },
   {
     "id": "852a3abe6d46820720febc0fedebff9a",
@@ -67981,7 +68479,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/5jn0o71593280376.png"
   },
   {
     "id": "c1ec9a65f4b4cf74477b368a7d6282de",
@@ -68040,7 +68539,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/1yyh9s1646775166.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/uheyzo1742102234.png"
   },
   {
     "id": "be6c63f416c67bca1300a98f5b89c3af",
@@ -68099,7 +68600,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/874p631628721400.png"
   },
   {
     "id": "7ad7a0ce2ef2618bb59b066da5642f70",
@@ -68158,7 +68660,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/aqidfn1742100110.png"
   },
   {
     "id": "3f48473742ca0fd2a85930554720c75e",
@@ -68276,7 +68779,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/59fo2s1742100034.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rrwpry1455460218.png"
   },
   {
     "id": "8ba93d190f1f934e33862a97a6353a6e",
@@ -68317,7 +68822,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/u5bgze1597943605.png"
   },
   {
     "id": "2f49dd8deae3079dc4eb2d634d18a99c",
@@ -68399,7 +68905,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/asp2ck1715849700.png"
   },
   {
     "id": "68bfc965eb267508e04d8e8d75c1a0ae",
@@ -68458,7 +68965,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/s85jjw1728749022.png"
   },
   {
     "id": "512ac18beb5aa936a59f7ea3e497ada2",
@@ -68922,7 +69430,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/7r89rg1526727277.png"
   },
   {
     "id": "22f6ac06dfcc88a847920f62633e6459",
@@ -69122,7 +69631,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/aqidfn1742100110.png"
   },
   {
     "id": "e07b1926be5a4d515c7eb108dbcee9c5",
@@ -69181,7 +69691,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/5jn0o71593280376.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/24xwpq1594125742.png"
   },
   {
     "id": "dcff2e31c0bce001a4db5caaf4fa8822",
@@ -69299,7 +69811,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/1yyh9s1646775166.png"
   },
   {
     "id": "3e3b5fa2b3c963e74cf044c60db0b573",
@@ -69358,7 +69871,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/uheyzo1742102234.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/uttpvw1455465617.png"
   },
   {
     "id": "537c0997cd899394f47f16545b7068b2",
@@ -69476,7 +69991,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/asp2ck1715849700.png"
   },
   {
     "id": "67ae5751c401a98409b8566ae4897069",
@@ -69558,7 +70074,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/s85jjw1728749022.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/u5bgze1597943605.png"
   },
   {
     "id": "8756200e539155e571557c4f2e0d7f05",
@@ -69599,7 +70117,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/rrwpry1455460218.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/874p631628721400.png"
   },
   {
     "id": "54697f453437ab26276d773be1d72e9b",
@@ -69658,7 +70178,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_fifa_world_cup"
+    "providerSportKey": "soccer_fifa_world_cup",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/59fo2s1742100034.png"
   },
   {
     "id": "5861fd9fc20372e46d80b63dee3b5a21",
@@ -69717,7 +70238,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/no15iq1590070851.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/g14m751590070801.png"
   },
   {
     "id": "99d4e6c497c8fb1b8b4b2f7531a8de20",
@@ -69776,7 +70299,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/9ls6lr1698754779.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/a7oyde1706245108.png"
   },
   {
     "id": "cf986b6f46cdee380e580d28aa5a6c40",
@@ -69835,7 +70360,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/2s8ady1578238881.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/2axjch1578239819.png"
   },
   {
     "id": "91af55abdd4ad711d08323e544c02b7d",
@@ -69894,7 +70421,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/99zl6k1590070905.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/a1ucr01706244426.png"
   },
   {
     "id": "24b26ae6991c6dcfa987c672dfe7c402",
@@ -69953,7 +70482,8 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/i3km591590070924.png"
   },
   {
     "id": "02e90a97d3576f9814ff0440cf86ca30",
@@ -70012,7 +70542,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ce3lhk1578239741.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ts5p221590070816.png"
   },
   {
     "id": "69c972a84e01ff955abf4f0d295a4534",
@@ -70071,7 +70603,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/9dqjaw1590071011.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/tq9edk1638813311.png"
   },
   {
     "id": "3ca333e6eabd45aa6ed82f3eb63cb96d",
@@ -70130,7 +70664,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/rgeshm1578240000.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/u60mus1590068872.png"
   },
   {
     "id": "f3b507e4c14b0315a77cfc9e73dc04da",
@@ -70189,7 +70725,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/mwnejb1578238986.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/5akmlf1590070888.png"
   },
   {
     "id": "999f09b5931411b7cf71d2b954cfe9dd",
@@ -70248,7 +70786,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_japan_j_league"
+    "providerSportKey": "soccer_japan_j_league",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/c6pot51578239112.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/gsgkxj1590068965.png"
   },
   {
     "id": "be00ba5973e5adb6895e39e42e310525",
@@ -70307,7 +70847,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_norway_eliteserien"
+    "providerSportKey": "soccer_norway_eliteserien",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/txpuvv1448823342.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/9mzq961590148192.png"
   },
   {
     "id": "c8486564e402714866628d13fb394279",
@@ -70348,7 +70890,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_spain_segunda_division"
+    "providerSportKey": "soccer_spain_segunda_division",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ywibjw1733456820.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/yswsww1473503818.png"
   },
   {
     "id": "fa6b4f34b8a9c4f9566b4d029118b972",
@@ -70389,7 +70933,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_spain_segunda_division"
+    "providerSportKey": "soccer_spain_segunda_division",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/mmhyb11616443601.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/upqyvr1473502952.png"
   },
   {
     "id": "2c1af52a5596716e10d203c1b906794e",
@@ -70430,7 +70976,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_spain_segunda_division"
+    "providerSportKey": "soccer_spain_segunda_division",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/yswsww1473503818.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/ywibjw1733456820.png"
   },
   {
     "id": "9a0e1fd5479844a35d51ea74f71d39c8",
@@ -70489,7 +71037,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_allsvenskan"
+    "providerSportKey": "soccer_sweden_allsvenskan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/wrytvq1429977939.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/bpx8gk1738226331.png"
   },
   {
     "id": "848143a034d48ad96dd0ac8d11f0ecf4",
@@ -70548,7 +71098,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_allsvenskan"
+    "providerSportKey": "soccer_sweden_allsvenskan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/26hnaj1639778271.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/mscha61644586515.png"
   },
   {
     "id": "bd55a24fb7113923abf99b7ad68318ae",
@@ -70607,7 +71159,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_allsvenskan"
+    "providerSportKey": "soccer_sweden_allsvenskan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/ywyxtp1429470529.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/rwsrxq1420769503.png"
   },
   {
     "id": "e40c66d6b54dace8a1dd3f4a9720aed9",
@@ -70666,7 +71220,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_allsvenskan"
+    "providerSportKey": "soccer_sweden_allsvenskan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/svqvqq1421957626.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/3kgg5b1592144695.png"
   },
   {
     "id": "c4a8606c2c9e384350cea213c6ece1d3",
@@ -70725,7 +71281,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_allsvenskan"
+    "providerSportKey": "soccer_sweden_allsvenskan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/4mltnh1628558366.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/yuuwru1425411493.png"
   },
   {
     "id": "e9f0efa73fc1fe3c38c03aab0772cc4b",
@@ -70766,7 +71324,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_allsvenskan"
+    "providerSportKey": "soccer_sweden_allsvenskan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/nwr81l1639779730.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/3pahks1639779139.png"
   },
   {
     "id": "e3ed1ca33d762c2e348c8865a6c7c3b2",
@@ -70825,7 +71385,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_superettan"
+    "providerSportKey": "soccer_sweden_superettan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/4gslrk1579904587.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/qqkdoc1592144686.png"
   },
   {
     "id": "54579f52d9aedbff93e65fae71b2dcd9",
@@ -70884,7 +71446,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_superettan"
+    "providerSportKey": "soccer_sweden_superettan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/gxj75t1579903800.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/87sdp61676027891.png"
   },
   {
     "id": "8680206125dd2b5593c5c813795b4eed",
@@ -70943,7 +71507,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_superettan"
+    "providerSportKey": "soccer_sweden_superettan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/8s0ejz1644586526.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/j1vlpe1639778697.png"
   },
   {
     "id": "eab0ad141593276c78f3edc5a97d7c80",
@@ -71002,7 +71568,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_superettan"
+    "providerSportKey": "soccer_sweden_superettan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/b5nixj1560591208.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/wtqvry1429979320.png"
   },
   {
     "id": "4ef03f62c66d6ce28710b92227390510",
@@ -71043,7 +71611,9 @@
         ]
       }
     ],
-    "providerSportKey": "soccer_sweden_superettan"
+    "providerSportKey": "soccer_sweden_superettan",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/team/badge/657eym1681540770.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/team/badge/6pvzqm1592144722.png"
   },
   {
     "id": "cc0adbef781ada963c0516646063a2e1",
@@ -71096,7 +71666,8 @@
         ]
       }
     ],
-    "providerSportKey": "tennis_atp_french_open"
+    "providerSportKey": "tennis_atp_french_open",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/4feecl1712087491.png"
   },
   {
     "id": "82e09c833f76f59f4e640b27b7d2f275",
@@ -71131,7 +71702,9 @@
         ]
       }
     ],
-    "providerSportKey": "tennis_atp_french_open"
+    "providerSportKey": "tennis_atp_french_open",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/h0yqcx1675268125.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/omjace1761039192.png"
   },
   {
     "id": "4e85167bd9712cd0b65e8feae60412ff",
@@ -71184,7 +71757,9 @@
         ]
       }
     ],
-    "providerSportKey": "tennis_atp_french_open"
+    "providerSportKey": "tennis_atp_french_open",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/y9ut4z1675268167.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/e4bavd1741269328.png"
   },
   {
     "id": "136d56f483d97535d21f1d4ef87d6e2c",
@@ -71219,7 +71794,8 @@
         ]
       }
     ],
-    "providerSportKey": "tennis_wta_french_open"
+    "providerSportKey": "tennis_wta_french_open",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/sdizjo1716755147.png"
   },
   {
     "id": "fb3c48ec9e43553a586c48f1a5e6c5a7",
@@ -71272,7 +71848,9 @@
         ]
       }
     ],
-    "providerSportKey": "tennis_wta_french_open"
+    "providerSportKey": "tennis_wta_french_open",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/4knki51748965857.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/r0ms0y1713778928.png"
   },
   {
     "id": "88386b9afa0bb2d85d19320d0d453ae3",
@@ -71325,6 +71903,8 @@
         ]
       }
     ],
-    "providerSportKey": "tennis_wta_french_open"
+    "providerSportKey": "tennis_wta_french_open",
+    "homeLogo": "https://r2.thesportsdb.com/images/media/player/cutout/yte3nb1748967196.png",
+    "awayLogo": "https://r2.thesportsdb.com/images/media/player/cutout/oua7n51748967536.png"
   }
 ]

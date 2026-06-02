@@ -1,14 +1,39 @@
 # BrasilBet — Plataforma de Apostas Esportivas (sportsbook)
 
-Plataforma **multi-tenant (white-label)** de apostas esportivas com **odds ao vivo
-em tempo real**, **bet slip**, **carteira**, **cashout**, **login/cadastro**,
-**banners e promoções configuráveis** e **backoffice**. Pensada para ser vendida
-como software para operadores (B2B) — cada cliente com sua marca.
+Plataforma **multi-tenant (white-label)** de apostas esportivas: board **multi-esporte
+em tempo real** (com ao vivo), **bilhete** (simples + múltiplas), **carteira**, **cashout**,
+**login/cadastro**, **detalhe do jogo com todos os mercados**, **banners/promoções**
+configuráveis e **backoffice completo** (BI + CRM + afiliados). Pensada para ser vendida
+como software a operadores (B2B) — cada cliente com sua própria marca.
 
-> ⚠️ **Estágio atual: DEMO.** Dinheiro **fictício**, odds **simuladas** por um motor
-> próprio (não há feed real nem dinheiro real). Serve para desenvolver, demonstrar e
-> validar o produto. Operar apostas com dinheiro real no Brasil exige licença da
-> **SPA/Ministério da Fazenda** (Lei 14.790/2023). Jogo responsável. +18.
+> ⚠️ **Estágio: DEMO.** Dinheiro **fictício**; depósito/saque **simulados**. Os JOGOS e as
+> ODDS são **reais** (colhidos de APIs de odds). Operar com dinheiro real no Brasil exige
+> licença da **SPA/Ministério da Fazenda** (Lei 14.790/2023). Jogo responsável. +18.
+
+---
+
+## 🟢 Estado atual (jun/2026) — leia antes de continuar
+
+Front praticamente completo e **todo em PT-BR**: board multi-esporte real + ao vivo, bilhete,
+carteira, detalhe com todos os mercados, backoffice BI/CRM/afiliados. **~444 jogos · 13
+esportes** no acervo (`data/demo-matches.json`).
+
+**A parede recorrente é a COTA da API-Football grátis (100 req/dia).** As chaves de teste do
+`.env.local` foram **SUSPENSAS** pelo provedor (repo público → varredura automática). Por isso
+o projeto está rodando em **`ODDS_PROVIDER=demo`** — reanima os jogos REAIS com "ao vivo"
+simulado, board sempre cheio, **sem gastar cota**. Para ao vivo REAL (`live`): gere uma chave
+nova em [dashboard.api-football.com](https://dashboard.api-football.com), cole em
+`APIFOOTBALL_KEY` no `.env.local` e troque para `ODDS_PROVIDER=live`.
+
+**Logos/escudos:** o board carrega o símbolo de cada time/atleta **assado no acervo**
+(`npm run feed:logos`, via TheSportsDB) — escudo de clube, foto de lutador/tenista ou bandeira
+de seleção. Quando não há imagem em nenhuma fonte, mostra um monograma escuro discreto
+(padronizado, nunca um "quadrado branco" ou bola colorida).
+
+**Próximos passos naturais:**
+1. Trocar a persistência JSON por **Postgres** (`src/server/persist.ts` — a API do `store.ts` não muda).
+2. **Gateway de pagamento real** (Pix/KYC: Mercado Pago/Asaas/Efí) no lugar do depósito/saque simulado (isolado no `store.ts`).
+3. **Plano pago da API-Football** → live contínuo + odds ao vivo reais + todos os mercados sem esgotar cota.
 
 ---
 
@@ -16,172 +41,111 @@ como software para operadores (B2B) — cada cliente com sua marca.
 
 ```bash
 npm install
-npm run dev
+npm run dev      # sobe web (:3000) + gateway WebSocket (:4000) juntos via concurrently
 ```
 
 - App: **http://localhost:3000**
-- Gateway de odds (WebSocket + health): **http://localhost:4000/health**
+- Gateway/health: **http://localhost:4000/health**
+- Antes de concluir mudanças: `npm run typecheck`.
 
-`npm run dev` sobe os dois processos juntos (Next.js + gateway WebSocket) via
-`concurrently`. Para rodar separados: `npm run dev:web` e `npm run dev:ws`.
+> O repo de handoff já vem com `.env.local` (chaves de teste) e `data/` (acervo de jogos reais +
+> contas demo) **versionados** — é só clonar, `npm install` e `npm run dev`. Não precisa configurar nada.
+
+### Logins
+- **Backoffice** (`/admin`): `admin` · senha `admin123`
+- **Contas demo do CRM**: qualquer login demo · senha `demo1234`
+- Ou **cadastre-se** na home (ganha R$ 1.000 fictícios).
+
+### Scripts de dados (precisam de chave válida / internet)
+- `npm run feed:harvest` — colhe **odds reais** (futebol da API-Football + multi-esporte da The Odds API) → `data/demo-matches.json`. Passe um número (`feed:harvest 500`) para sintetizar odds e encher mais o board. **Gasta cota.** Reinicie o gateway depois.
+- `npm run feed:logos` — resolve escudo/foto de **todos** os competidores (TheSportsDB) e grava no acervo. Cache idempotente/retomável (`data/logo-cache.json`); se parar por rate-limit (429), rode de novo que continua. Rode **depois** de cada `feed:harvest`. Reinicie o gateway no fim.
+- `npm run demo:reseed [qtd]` — regenera o acervo demo do CRM (rode com o gateway PARADO).
 
 ---
 
-## Acesso (demo)
+## Fonte de dados (`.env.local` → `ODDS_PROVIDER`)
 
-- **Cliente:** clique em **Cadastrar** (login + senha + telefone) e ganhe R$ 1.000
-  de saldo fictício. Depois é só **Entrar**.
-- **Backoffice:** acesse **/admin** logado como administrador.
-  Conta admin padrão — login: `admin` · senha: `admin123`.
+| Modo | O que faz | Cota |
+|---|---|---|
+| **demo** *(ativo)* | Jogos REAIS do acervo + "ao vivo" SIMULADO por cima (board sempre cheio) | **Não gasta** |
+| **live** | Acervo (pré-jogo) + jogos REALMENTE ao vivo agora (`/fixtures?live=all`, placar/minuto reais) | ~1 req/min |
+| **apifootball** | Feed pré-jogo (1.200+ ligas + logos) | Gasta |
+| **theoddsapi** | Cobertura menor (ligas grandes), mercados estendidos sob demanda | Gasta (500/mês) |
+| **simulation** | Jogos fictícios COM ao vivo (evite em demos — times fakes) | Não gasta |
 
-> As contas e configurações ficam em `data/*.json` (criados na 1ª execução).
-> Os tokens de sessão são em memória, então após reiniciar o servidor é preciso
-> entrar de novo (a conta continua salva).
+O motor é escolhido em `src/server/index.ts` (`makeEngine()`); todos implementam a interface
+`OddsSource` e emitem os mesmos eventos, então o cliente não muda entre modos.
 
 ---
 
 ## Arquitetura
 
 ```
-                          ┌───────────────────────────┐
-   Browser (Next.js)      │   Gateway WebSocket :4000  │
- ┌───────────────────┐    │  ┌─────────────────────┐  │
- │  React + Zustand  │◄──►│  │  Motor de simulação │  │  ← gera jogos/odds,
- │  bet slip /       │ ws │  │  (engine.ts + odds) │  │    gols, suspensões
- │  cashout / saldo  │    │  └─────────┬───────────┘  │
- └───────────────────┘    │  ┌─────────▼───────────┐  │
-                          │  │  Ledger (store.ts)  │  │  ← carteira, apostas,
-                          │  │  carteira + apostas │  │    liquidação, auditoria
-                          │  └─────────────────────┘  │
-                          └───────────────────────────┘
+   Browser (Next.js)            Gateway WebSocket :4000
+ ┌───────────────────┐        ┌─────────────────────────┐
+ │  React + Zustand  │◄─ ws ─►│  Motor de odds (engine) │  ← jogos/odds, gols,
+ │  board / bilhete  │        │  store (carteira/aposta)│    suspensão, liquidação,
+ │  carteira / admin │        │  auth + backoffice      │    contas e apostas
+ └───────────────────┘        └─────────────────────────┘
 ```
 
-- **Tempo real:** um único canal WebSocket entrega snapshot inicial, atualizações
-  de odds/placar ao vivo, e o request/response de apostar e fazer cashout.
-- **Odds:** modelo de Poisson de gols restantes (placar + tempo + força dos times)
-  com margem da casa (overround ~7%). Reagem de forma crível a gols e ao relógio.
-- **Dinheiro:** carteira em ledger com trilha de auditoria de cada movimento.
+- **Tempo real:** um único canal WebSocket entrega snapshot, odds/placar ao vivo, apostas, cashout e ações de admin. O gateway agrupa updates num `matches_batch`/seg (board fluido com centenas de jogos).
+- **Persistência:** arquivos JSON em `data/` via `src/server/persist.ts` (trocar por Postgres em produção; a API do `store.ts` não muda).
 
 ### Estrutura de pastas
-
 ```
 src/
-  shared/        Tipos + IDs compartilhados entre servidor e cliente (o "contrato")
-  server/        Motor de simulação, ledger e gateway WebSocket (rodado via tsx)
-    odds.ts        Modelo probabilístico → odds (com margem)
-    engine.ts      Geração de jogos, ticks, gols, suspensão, liquidação
-    store.ts       Contas, carteira, apostas, banners e promoções (persistido em JSON)
-    auth.ts        Hash de senha (scrypt), tokens e validação
-    persist.ts     Carga/gravação dos arquivos data/*.json
-    index.ts       Gateway WebSocket (orquestra engine + store + auth)
-  lib/           Cliente WebSocket, formatação, hooks
-  store/         Estado global do cliente (Zustand)
-  components/    UI (board, odd, bet slip, banners, auth, admin/backoffice…)
-  app/           Next.js App Router (home, /promocoes, /admin)
+  shared/       Tipos + IDs compartilhados (o "contrato" servidor↔cliente)
+  server/       Motor de odds, ledger e gateway WebSocket (rodado via tsx)
+    index.ts        Gateway WS (escolhe o motor: live/demo/apifootball/…)
+    liveEngine.ts   Ao vivo REAL (polling /fixtures?live=all)
+    demoEngine.ts   Jogos reais + ao vivo simulado (vitrine, sem cota)
+    store.ts        Contas, carteira, apostas, afiliados, backoffice (JSON)
+    auth.ts         Hash de senha (scrypt), sessões, rate-limit
+    providers/      apiFootball, theOddsApi, harvest, logoBackfill, synthOdds
+  lib/          Cliente WebSocket, i18n (PT-BR), logos, formatação
+  store/        Estado global do cliente (Zustand)
+  components/   UI (board, bilhete, detalhe, carteira, admin/backoffice…)
+  app/          Next.js App Router (home, /perfil, /afiliados, /admin)
 ```
 
 ---
 
 ## O que já está pronto
 
-- ✅ **Layout profissional de 3 colunas** (navegação de esportes/ligas · eventos ·
-  boletim), no padrão das grandes casas
-- ✅ **Design system premium**: ícones SVG próprios, escudos dos times, fonte Inter,
-  ribbon de esportes, sombras/profundidade, rodapé completo e micro-interações
-- ✅ Faixa de **destaques**, **busca** por time, filtros (Ao Vivo/Próximas) e
-  **seletor de mercado** (colunas de odds)
-- ✅ Board de futebol com partidas **ao vivo** e **pré-jogo** (4 ligas)
-- ✅ **Odds em tempo real** que sobem/descem com indicador visual (▲▼)
-- ✅ Relógio do jogo, placar ao vivo e **suspensão de mercado no gol** (🔒)
-- ✅ **Bet slip** com retorno potencial e **proteção contra mudança de odd**
-- ✅ **Apostas múltiplas (acumuladas)**: várias seleções, odds multiplicadas, ganha se todas baterem
-- ✅ **Detalhe do jogo** (clicar na partida) com **todos os mercados** da API (resultado,
-  total, ambos marcam, dupla chance, empate anula…) — carregados sob demanda
-- ✅ **Multi-esporte**: futebol, basquete, tênis, MMA, boxe, beisebol, fut. americano,
-  críquete, hóquei, rugby… (todos os esportes ativos da API) com filtro por esporte
-  e mercado de 2 vias ("Vencedor") onde não há empate
-- ✅ **Logos reais dos clubes** (TheSportsDB, cache no navegador) + **bandeiras** das seleções;
-  monograma sempre por baixo (nunca fica em branco)
-- ✅ Múltipla **automática** ao adicionar 2+ seleções
-- ✅ Rodapé com **Pix** + bloco de licença/responsabilidade (SPA/Lei 14.790, 18+)
-- ✅ Carteira (saldo fictício) com débito/crédito atômico
-- ✅ **Cashout** ao vivo (valor indicativo recalculado a cada odd) + execução
-- ✅ **Liquidação automática** quando a partida termina (ganhou/perdeu)
-- ✅ **Login / cadastro** (login, senha, telefone) com senha em **hash (scrypt)**
-- ✅ **Banners** rotativos na home, configuráveis no backoffice (com **upload de
-  imagem do computador** — comprimida no navegador)
-- ✅ Página de **Promoções** configurável
-- ✅ **Logo da marca** (SVG padrão) + **upload de logo** e nome no backoffice (white-label)
-- ✅ Diferenciação visual **pré-jogo × ao vivo** (cards de destaque + barra de progresso do jogo)
-- ✅ **CPF obrigatório** no cadastro (validado) — base para saque somente ao titular
-- ✅ **Carteira**: depósito e **saque via Pix** (simulado), com **extrato** de transações
-- ✅ **Página de perfil** (`/perfil`): dados, saldo, depósito/saque e histórico
-- ✅ **Mobile responsivo**: navegação inferior + boletim em gaveta (bottom sheet)
-- ✅ Bandeiras em **SVG** e **escudos com a cor real** de cada time
-- ✅ **Backoffice** (`/admin`) protegido por papel: dashboard + CRUD de marca, banners e promoções
-- ✅ **Persistência** em arquivos JSON (contas, apostas, banners, promoções)
-- ✅ Reconexão automática do WebSocket + heartbeat
-- ✅ Estrutura **multi-tenant** (campo `tenantId`) pronta para white-label
+- ✅ **Board multi-esporte real** (futebol, basquete, tênis, MMA/UFC, boxe, beisebol, fut. americano, hóquei, rugby, críquete, AFL…) com **ao vivo**, organização por importância e filtro por esporte/mercado
+- ✅ **Detalhe do jogo** com **todos os mercados** (até ~59 no futebol), traduzidos para PT-BR
+- ✅ **Bilhete** com **apostas múltiplas** (auto-switch), proteção contra mudança de odd e validação anti-fraude ao vivo no servidor
+- ✅ **Login/cadastro** completo (CPF validado, +18, senha scrypt), **carteira** (depósito + saque Pix simulado + extrato), **perfil**
+- ✅ **Cashout** ao vivo + **liquidação automática** no fim do jogo
+- ✅ **Crests padronizados**: escudo de clube / foto de atleta / bandeira de seleção — assados no acervo (CDN), com monograma escuro discreto onde não há imagem
+- ✅ **Backoffice** (`/admin`): Dashboard BI (KPIs, gráficos SVG, funil, ranking), **CRM** (lista/detalhe/ajuste/bloqueio/export CSV), **Afiliados** (rev-share, GGR, comissão), Marca/Banners/Promoções (CRUD + upload)
+- ✅ **Programa de afiliados** (código + link `?ref=`, comissão = % do GGR dos indicados)
+- ✅ **Acervo demo do CRM** (~160 clientes BR sintéticos com histórico realista) auto-semeado no modo `demo`
+- ✅ **Mobile responsivo**, design premium (ícones SVG, bandeiras flagcdn), **multi-tenant** (white-label)
+- ✅ Segurança: rate-limit anti-brute-force + sessões persistidas que sobrevivem ao restart
 
 ---
 
-## Fornecedor de odds real — **API-Football ligado**
-
-A fonte de dados é escolhida em `.env.local`:
-
-```ini
-ODDS_PROVIDER=apifootball   # "simulation" | "theoddsapi" | "apifootball"
-APIFOOTBALL_KEY=suachave    # grátis em dashboard.api-football.com (100 req/dia)
-ODDS_API_KEY=suachave       # alternativa: the-odds-api.com (cobertura menor)
-ODDS_REFRESH_MS=10800000    # intervalo de atualização (padrão 3h)
-```
-
-**API-Football** (`server/providers/apiFootball.ts`) é o provedor recomendado:
-cobertura **ampla** (1.200+ ligas — amistosos, copas regionais, divisões inferiores)
-+ **logos reais** de times e ligas. Modelo: `/fixtures?date=` (jogos do dia) +
-`/odds?date=` (paginado), juntados por fixture id; vários mercados por jogo.
-Plano grátis = 100 req/dia, por isso o refresh é longo e há cache em disco.
-
-- **`theoddsapi`** → odds **reais** via [The Odds API](https://the-odds-api.com)
-  (`server/realFeed.ts` + `server/providers/theOddsApi.ts`). Competições ativas são
-  configuradas em `SPORT_KEYS` (hoje: Copa do Mundo, Libertadores, Sul-Americana,
-  Série B, J-League, Allsvenskan — ligas europeias estão fora de temporada).
-- **`simulation`** → motor próprio com **partidas ao vivo** (placar, minuto,
-  cashout, liquidação automática).
-- **Economia de cota:** cache em `data/odds-cache.json` (restarts reusam) +
-  refresh lento. `npm run feed:test` valida a chave imprimindo jogos reais.
-
-> ⚠️ **Limitação desta etapa:** o endpoint de odds traz **pré-jogo**. "Ao vivo"
-> (placar/minuto) e a **liquidação automática** de jogos reais exigem o endpoint
-> de *scores* — próximo passo. Por isso, para a demo "ao vivo" completa, use
-> `ODDS_PROVIDER=simulation`.
-
-> ⚠️ Depósitos e saques são **simulados** (demo). O movimento real de dinheiro
-> exige um **gateway de pagamento** (Mercado Pago, Asaas, Efí/Pagar.me) + KYC.
-> O ponto de integração já está isolado em `store.ts` (`deposit`/`withdraw`).
-
 ## Roadmap até produção
 
-A arquitetura foi feita para evoluir **sem reescrita** — trocamos peças nas bordas:
+A arquitetura evolui **sem reescrita** — trocam-se peças nas bordas:
 
 | # | Etapa | O que muda |
 |---|---|---|
-| 1 | **Persistência** | Ledger em memória → **Prisma + Postgres** (mesma API de `store.ts`) |
-| 2 | **Autenticação real** | Login/cadastro, sessões, papéis (apostador / admin / trader) |
-| 3 | **Painel admin/trader** | Gestão de mercados, limites de risco, relatórios, contas |
-| 4 | **Feed real de odds** | Motor de simulação → adaptador de **Sportradar / Genius / OddsMatrix** (mesmos eventos `match_update` / `match_finished`) |
-| 5 | **Escala em tempo real** | EventEmitter → **Redis pub/sub** para múltiplas instâncias do gateway |
-| 6 | **Pagamentos + KYC** | Pix (entrada/saque), verificação de identidade, antifraude, AML |
-| 7 | **White-label completo** | Temas/marcas por tenant, domínios, configurações por operador |
-| 8 | **Conformidade** | Jogo responsável (limites, autoexclusão), trilhas de auditoria, licença SPA/MF |
+| 1 | **Persistência** | JSON → **Postgres** (mesma API de `store.ts`/`persist.ts`) |
+| 2 | **Pagamentos + KYC** | Pix entrada/saque real (Mercado Pago/Asaas/Efí), antifraude (isolado em `store.ts`) |
+| 3 | **Feed pago de odds** | Plano pago da API-Football (ou Sportradar/Genius) → live contínuo + odds ao vivo reais |
+| 4 | **Escala em tempo real** | EventEmitter → Redis pub/sub para múltiplas instâncias do gateway |
+| 5 | **White-label completo** | Temas/domínios por tenant, mais módulos de backoffice (risco, relatórios) |
+| 6 | **Conformidade** | Jogo responsável (limites/autoexclusão), auditoria, licença SPA/MF (do operador cliente) |
 
 ### Notas técnicas (estágio demo)
+- **Saque/depósito são simulados** — dinheiro real exige gateway de pagamento + KYC.
+- O **ao vivo do modo `demo`** é simulado por cima de jogos reais; o placar/minuto reais exigem `live` (com chave válida) ou plano pago.
+- Cota da API-Football grátis = 100 req/dia (a parede recorrente). Plano pago libera todos os jogos/mercados + live contínuo.
 
-- O **estado é em memória**: reiniciar o gateway zera carteiras e apostas. A
-  persistência (etapa 1) resolve isso.
-- As **odds são simuladas** para desenvolvimento — não refletem partidas reais.
-- O tempo é **acelerado** (uma partida dura ~2 min) para facilitar a demonstração.
-```
+---
 
-Configuração: `.env.local` define `NEXT_PUBLIC_WS_URL` (browser) e `WS_PORT` (gateway).
-```
+Configuração de portas/URL: `.env.local` define `NEXT_PUBLIC_WS_URL` (browser) e `WS_PORT` (gateway).
+Contexto completo do projeto (decisões, fonte de dados, limitações): ver **`CLAUDE.md`** na raiz.

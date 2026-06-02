@@ -58,13 +58,15 @@ async function main() {
     if (q) {
       const left = q.limit - q.used;
       console.log(`[harvest] API-Football: ${q.used}/${q.limit} usadas hoje — restam ~${left}.`);
-      reqBudget = left < 6 ? 0 : Math.min(left - 3, 60);
+      reqBudget = left < 6 ? 0 : Math.min(left - 3, 85);
     }
     if (reqBudget > 0) {
       const football = await fetchApiFootballMatches(afKey, {
+        // Janela de UMA SEMANA (ontem → +6 dias): pega amistosos/seleções e jogos
+        // de fim de semana que ficavam de fora da janela curta de 3 dias.
         startDayOffset: -1,
-        days: 3,
-        maxOddsPages: 8,
+        days: 8,
+        maxOddsPages: 9,
         includeFinished: true,
         synthesizeMissing: synthTarget > 0,
         targetMatches: synthTarget || undefined,

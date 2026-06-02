@@ -4,9 +4,11 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Icon } from "./Icon";
 
 /**
- * Faixa com rolagem horizontal: arrastar com o mouse (desktop), setas que
- * aparecem ao passar o mouse, e toque/swipe no celular. Suprime o clique
- * acidental nos filhos quando houve arrasto.
+ * Faixa com rolagem horizontal: arrastar com o mouse (desktop), setas e
+ * toque/swipe no celular. As setas aparecem ASSIM QUE há conteúdo rolável —
+ * inclusive quando os filhos chegam depois (ex.: contadores via WebSocket),
+ * porque re-medimos a cada render (rede de segurança) além do ResizeObserver.
+ * Suprime o clique acidental nos filhos quando houve arrasto.
  */
 export function HScroller({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -33,6 +35,13 @@ export function HScroller({ children, className = "" }: { children: React.ReactN
       ro.disconnect();
     };
   }, [update]);
+
+  // Rede de segurança: re-mede após cada render. Os filhos podem ter mudado de
+  // tamanho (ex.: contadores que chegam async via WebSocket) sem disparar o
+  // ResizeObserver do container — assim as setas aparecem na hora, sem hover.
+  useEffect(() => {
+    update();
+  });
 
   const onDown = (e: React.MouseEvent) => {
     const el = ref.current;
@@ -72,17 +81,13 @@ export function HScroller({ children, className = "" }: { children: React.ReactN
         onMouseUp={end}
         onMouseLeave={end}
         onClickCapture={onClickCapture}
-        className={`flex cursor-grab gap-3 overflow-x-auto scroll-smooth no-scrollbar active:cursor-grabbing ${className}`}
+        className={`flex cursor-grab overflow-x-auto scroll-smooth no-scrollbar active:cursor-grabbing ${className}`}
       >
         {children}
       </div>
 
-      {canL && (
-        <Arrow side="left" onClick={() => scrollBy(-1)} />
-      )}
-      {canR && (
-        <Arrow side="right" onClick={() => scrollBy(1)} />
-      )}
+      {canL && <Arrow side="left" onClick={() => scrollBy(-1)} />}
+      {canR && <Arrow side="right" onClick={() => scrollBy(1)} />}
     </div>
   );
 }
@@ -93,8 +98,10 @@ function Arrow({ side, onClick }: { side: "left" | "right"; onClick: () => void 
       onClick={onClick}
       aria-label={side === "left" ? "Anterior" : "Próximo"}
       className={[
-        "absolute top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-ink-900/90 text-white opacity-0 shadow-pop backdrop-blur transition group-hover:opacity-100 hover:bg-ink-700 sm:flex",
-        side === "left" ? "left-1" : "right-1",
+        "absolute top-1/2 z-10 hidden h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full",
+        "border border-white/10 bg-ink-900/95 text-white shadow-pop backdrop-blur",
+        "opacity-90 transition hover:bg-ink-700 hover:opacity-100 sm:flex",
+        side === "left" ? "left-0" : "right-0",
       ].join(" ")}
     >
       <Icon name="chevronRight" size={18} className={side === "left" ? "rotate-180" : ""} />

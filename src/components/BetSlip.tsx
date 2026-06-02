@@ -20,7 +20,6 @@ export function BetSlip() {
   const [mode, setMode] = useState<"simples" | "multipla">("simples");
   const [stake, setStake] = useState("25");
   const [submitting, setSubmitting] = useState(false);
-  const [validateSecs, setValidateSecs] = useState(0);
 
   // 2+ seleções = múltipla automaticamente; 1 ou 0 = simples.
   useEffect(() => {
@@ -36,19 +35,6 @@ export function BetSlip() {
     return { s, available, currentOdds: selection?.odds ?? s.oddsAtPick };
   });
   const availableSels = resolved.filter((r) => r.available);
-  // Aposta ao vivo passa pela validação anti-fraude (~10s) no servidor.
-  const hasLive = availableSels.some((r) => matches[r.s.matchId]?.status === "live");
-
-  // Contagem regressiva de validação ao vivo (feedback durante o delay).
-  useEffect(() => {
-    if (!submitting || !hasLive) {
-      setValidateSecs(0);
-      return;
-    }
-    setValidateSecs(10);
-    const iv = setInterval(() => setValidateSecs((s) => Math.max(0, s - 1)), 1000);
-    return () => clearInterval(iv);
-  }, [submitting, hasLive]);
 
   const balance = wallet?.balance ?? 0;
   const stakeNum = Number(stake.replace(",", "."));
@@ -229,16 +215,23 @@ export function BetSlip() {
               data-testid="confirm-bet"
               className={[
                 "mt-3 w-full rounded-xl py-3 text-sm font-bold transition",
-                canSubmit ? "bg-brand text-ink-950 shadow-glow hover:bg-brand-dark" : "cursor-not-allowed bg-ink-600 text-slate-500",
+                canSubmit
+                  ? "bg-brand text-ink-950 shadow-glow hover:bg-brand-dark"
+                  : submitting
+                    ? "cursor-wait bg-brand/70 text-ink-950"
+                    : "cursor-not-allowed bg-ink-600 text-slate-500",
               ].join(" ")}
             >
-              {submitting
-                ? hasLive
-                  ? `Validando ao vivo… ${validateSecs}s`
-                  : "Processando…"
-                : mode === "multipla"
-                  ? "Confirmar múltipla"
-                  : `Confirmar ${availableSels.length || ""} aposta(s)`.trim()}
+              {submitting ? (
+                <span className="flex items-center justify-center gap-2">
+                  <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
+                  Confirmando aposta…
+                </span>
+              ) : mode === "multipla" ? (
+                "Confirmar múltipla"
+              ) : (
+                `Confirmar ${availableSels.length || ""} aposta(s)`.trim()
+              )}
             </button>
           )}
         </div>

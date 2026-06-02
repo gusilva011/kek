@@ -39,7 +39,7 @@ export function FeaturedStrip() {
         <span className="text-sm font-bold text-white">Em destaque</span>
         <span className="text-xs text-slate-500">Principais jogos do momento</span>
       </div>
-      <HScroller className="pb-1">
+      <HScroller className="gap-3 pb-1">
         {featured.map((m) => (
           <FeaturedCard key={m.id} match={m} />
         ))}

@@ -1,16 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { contrastText, initials, shade } from "@/lib/colors";
+import { useEffect, useRef, useState } from "react";
+import { initials, textTint } from "@/lib/colors";
 import { teamColor, teamFlagCode } from "@/lib/teams";
 import { getTeamLogo, getPlayerPhoto } from "@/lib/logos";
 
 /**
- * Escudo do time / foto do atleta:
- *  - `logo` fornecido (ex.: API-Football) → usa direto.
- *  - `player` (esportes individuais) → foto do atleta (TheSportsDB).
- *  - senão, seleção → bandeira; clube → escudo (TheSportsDB).
- *  - monograma colorido sempre por baixo (nunca fica em branco).
+ * Símbolo do competidor — PADRONIZADO, sem caixa/anel/bola atrás:
+ *  - Seleção nacional → bandeira do país (círculo).
+ *  - Atleta (tênis/MMA/boxe) → foto/recorte SEM nada atrás (só o jogador).
+ *  - Clube com `logo` → SÓ o escudo (contido, flutuando, sem caixa/anel).
+ *  - Sem logo/foto → monograma num disco ESCURO discreto (iniciais na cor do time).
+ *
+ * Nada de fundo branco/claro: só um escudo/foto real (transparente) flutuando, ou
+ * um disco escuro sutil quando não há imagem.
  */
 export function TeamCrest({
   name,
@@ -24,23 +27,25 @@ export function TeamCrest({
   player?: boolean;
 }) {
   const flag = player ? null : teamFlagCode(name);
-  if (logo) return <LogoCrest name={name} size={size} src={logo} />;
   if (flag) return <FlagCrest name={name} size={size} code={flag} />;
-  if (player) return <PlayerCrest name={name} size={size} />;
+  if (player) return <PhotoCrest name={name} size={size} src={logo} />;
+  if (logo) return <LogoCrest name={name} size={size} src={logo} />;
   return <ClubCrest name={name} size={size} />;
 }
 
+/** Disco ESCURO discreto — só aparece quando NÃO há imagem (monograma/loading). */
+const MONO_BG = "linear-gradient(150deg, #2b3442, #161b23)";
+
+/** Monograma: disco escuro + iniciais na cor (clara) do time. Nunca um quadrado branco. */
 function Monogram({ name, size, hidden }: { name: string; size: number; hidden?: boolean }) {
-  const bg = teamColor(name);
-  const fg = contrastText(bg);
   return (
     <span
-      className="absolute inset-0 flex items-center justify-center rounded-full font-bold leading-none ring-1 ring-white/15 transition-opacity duration-300"
+      className="absolute inset-0 flex items-center justify-center rounded-full font-bold leading-none transition-opacity duration-300"
       style={{
         fontSize: Math.round(size * 0.4),
-        background: `linear-gradient(150deg, ${shade(bg, 0.12)}, ${bg} 55%, ${shade(bg, -0.16)})`,
-        color: fg,
-        boxShadow: "inset 0 1px 1px rgba(255,255,255,0.28), inset 0 -2px 4px rgba(0,0,0,0.3)",
+        background: MONO_BG,
+        color: textTint(teamColor(name)),
+        boxShadow: "inset 0 1px 1px rgba(255,255,255,0.06)",
         opacity: hidden ? 0 : 1,
       }}
     >
@@ -50,33 +55,30 @@ function Monogram({ name, size, hidden }: { name: string; size: number; hidden?:
 }
 
 /**
- * Escudo (logo) num "chip" CIRCULAR uniforme — escudo contido (object-contain
- * com folga) sobre um fundo sutil, com máscara redonda, para todos os logos
- * ficarem no mesmo formato profissional (sem quadrados feios). Enquanto carrega
- * (ou se falhar), mostra o monograma colorido.
+ * Escudo de clube: SÓ o símbolo. `object-contain` num quadrado, SEM fundo, sem
+ * anel — o escudo "flutua" com uma leve sombra. Enquanto carrega (ou se falhar),
+ * mostra o disco escuro do monograma por baixo.
  */
 function LogoCrest({ name, size, src }: { name: string; size: number; src: string }) {
   const [ok, setOk] = useState(false);
+  const ref = useRef<HTMLImageElement>(null);
+  // Imagem em CACHE já pode estar "complete" antes de o onLoad ligar (no reload) —
+  // sem isto o logo ficava invisível (opacity 0) com o monograma por cima.
+  useEffect(() => {
+    if (ref.current?.complete && ref.current.naturalWidth > 0) setOk(true);
+  }, [src]);
   return (
-    <span
-      className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-white/10"
-      style={{
-        width: size,
-        height: size,
-        background: ok ? "radial-gradient(circle at 50% 35%, rgba(255,255,255,0.12), rgba(255,255,255,0.04))" : undefined,
-      }}
-    >
+    <span className="relative inline-flex shrink-0 items-center justify-center" style={{ width: size, height: size }}>
       <Monogram name={name} size={size} hidden={ok} />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
+        ref={ref}
         src={src}
         alt=""
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 object-contain transition-opacity duration-300"
+        className="absolute inset-0 h-full w-full object-contain transition-opacity duration-300"
         style={{
-          width: "72%",
-          height: "72%",
           opacity: ok ? 1 : 0,
-          filter: "drop-shadow(0 1px 1.5px rgba(0,0,0,0.45))",
+          filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.55))",
         }}
         onLoad={() => setOk(true)}
         onError={() => setOk(false)}
@@ -85,29 +87,7 @@ function LogoCrest({ name, size, src }: { name: string; size: number; src: strin
   );
 }
 
-function FlagCrest({ name, size, code }: { name: string; size: number; code: string }) {
-  const [err, setErr] = useState(false);
-  const bg = teamColor(name);
-  const fg = contrastText(bg);
-  return (
-    <span
-      className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full font-bold leading-none ring-1 ring-white/20"
-      style={{ width: size, height: size, fontSize: Math.round(size * 0.4), background: bg, color: fg }}
-    >
-      {!err && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={`https://flagcdn.com/w80/${code}.png`}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          onError={() => setErr(true)}
-        />
-      )}
-      {err && initials(name)}
-    </span>
-  );
-}
-
+/** Clube sem logo do provedor: busca o escudo (TheSportsDB) e cai no monograma. */
 function ClubCrest({ name, size }: { name: string; size: number }) {
   const [src, setSrc] = useState<string | null>(null);
   useEffect(() => {
@@ -128,47 +108,72 @@ function ClubCrest({ name, size }: { name: string; size: number }) {
   );
 }
 
+/** Bandeira de seleção nacional num círculo limpo (borda interna sutil, sem anel). */
+function FlagCrest({ name, size, code }: { name: string; size: number; code: string }) {
+  const [err, setErr] = useState(false);
+  return (
+    <span
+      className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full"
+      style={{
+        width: size,
+        height: size,
+        boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.10)",
+      }}
+    >
+      {!err ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={`https://flagcdn.com/w80/${code}.png`}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          onError={() => setErr(true)}
+        />
+      ) : (
+        <Monogram name={name} size={size} />
+      )}
+    </span>
+  );
+}
+
 /**
- * Atleta (tênis/MMA/boxe): foto/recorte do TheSportsDB sobre um fundo SÓLIDO
- * (sem a sigla por baixo — o cutout é transparente e deixava as iniciais
- * vazarem). Sem foto → monograma limpo.
+ * Atleta (tênis/MMA/boxe): foto/recorte SÓ do jogador — SEM disco/bola atrás.
+ * O recorte (cutout) do TheSportsDB é transparente, então com fundo transparente
+ * sobra só o atleta sobre o board. Sem foto → disco escuro do monograma.
+ * `src` pode vir do acervo (backfill) ou da busca client-side.
  */
-function PlayerCrest({ name, size }: { name: string; size: number }) {
-  const [src, setSrc] = useState<string | null>(null);
+function PhotoCrest({ name, size, src }: { name: string; size: number; src?: string }) {
+  const [url, setUrl] = useState<string | null>(src ?? null);
   useEffect(() => {
+    if (src) {
+      setUrl(src);
+      return;
+    }
     let alive = true;
-    getPlayerPhoto(name).then((url) => {
-      if (alive) setSrc(url);
+    getPlayerPhoto(name).then((u) => {
+      if (alive) setUrl(u);
     });
     return () => {
       alive = false;
     };
-  }, [name]);
+  }, [name, src]);
 
-  if (!src) {
-    return (
-      <span className="relative inline-flex shrink-0 items-center justify-center" style={{ width: size, height: size }}>
-        <Monogram name={name} size={size} />
-      </span>
-    );
-  }
-  const bg = teamColor(name);
   return (
     <span
-      className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-white/15"
-      style={{
-        width: size,
-        height: size,
-        background: `linear-gradient(150deg, ${shade(bg, 0.14)}, ${bg} 60%, ${shade(bg, -0.2)})`,
-      }}
+      className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full"
+      style={{ width: size, height: size }}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={src}
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover"
-        onError={() => setSrc(null)}
-      />
+      {/* disco escuro só enquanto carrega / sem foto */}
+      <Monogram name={name} size={size} hidden={!!url} />
+      {url && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={url}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ objectPosition: "50% 16%", filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.45))" }}
+          onError={() => setUrl(null)}
+        />
+      )}
     </span>
   );
 }

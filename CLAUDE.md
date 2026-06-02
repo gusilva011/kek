@@ -23,7 +23,8 @@ npm run dev          # web :3000 + gateway WebSocket :4000
 ```
 - **Logins:** admin do backoffice `admin` / `admin123` (em `/admin`) · qualquer conta demo do CRM usa senha `demo1234` · ou cadastre-se na home.
 - **Cota:** a chave API-Football grátis dá 100 req/dia. Se o ao vivo travar por cota, troque `ODDS_PROVIDER=live` → `demo` no `.env.local` (vitrine sem gastar cota) e reinicie. Renovar o acervo de jogos: `npm run feed:harvest` (depois reinicie o gateway).
-- ⚠️ Como o repo é público, as chaves de teste podem ser **suspensas** pelo provedor (varredura automática). Se pararem de funcionar, gere novas em dashboard.api-football.com / the-odds-api.com e cole no `.env.local`. **Em produção, deixe o repo privado e gire as chaves.**
+- **Logos/fotos (escudos + fotos de atleta):** `npm run feed:logos` resolve o símbolo de TODOS os competidores via TheSportsDB e grava no acervo (`data/demo-matches.json`), com cache idempotente/retomável (`data/logo-cache.json`). Roda devagar (rate-limit da chave grátis); se parar por 429, rode de novo que continua de onde parou. **É o que o board carrega**, então o cliente não bate no endpoint de busca (que rate-limitava e fazia os símbolos sumirem). Rode depois de cada `feed:harvest`; reinicie o gateway no fim.
+- ⚠️ **Estado das chaves AF (jun/2026):** as 3 chaves de teste do `.env.local` foram **suspensas** pelo provedor (repo público — varredura automática). Por isso o `.env.local` está em `ODDS_PROVIDER=demo`. Para `live` real, gere uma chave nova em dashboard.api-football.com, cole em `APIFOOTBALL_KEY` e troque para `live`. **Em produção, deixe o repo privado e gire as chaves.**
 
 ## Como rodar
 ```bash
