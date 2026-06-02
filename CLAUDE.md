@@ -11,6 +11,20 @@ operadores. **Não fazer cassino** (decisão de valores do cliente — só espor
 > de verdade = **plano pago**. **Próximos passos naturais:** Postgres (trocar `persist.ts`), gateway de
 > pagamento real (Pix/KYC), live odds reais (plano pago). Detalhes em "Limitações / pendências" abaixo.
 
+## Continuação / handoff (para quem clonou do GitHub)
+Este repo é um **handoff de teste**: `.env.local` (chaves de teste) e `data/` (acervo de
+jogos reais + contas demo + bilhetes) **já vêm versionados** — é só clonar e rodar, sem
+configurar nada. Não há dados oficiais/reais; é tudo demonstração.
+```bash
+git clone https://github.com/gusilva011/kek.git
+cd kek
+npm install
+npm run dev          # web :3000 + gateway WebSocket :4000
+```
+- **Logins:** admin do backoffice `admin` / `admin123` (em `/admin`) · qualquer conta demo do CRM usa senha `demo1234` · ou cadastre-se na home.
+- **Cota:** a chave API-Football grátis dá 100 req/dia. Se o ao vivo travar por cota, troque `ODDS_PROVIDER=live` → `demo` no `.env.local` (vitrine sem gastar cota) e reinicie. Renovar o acervo de jogos: `npm run feed:harvest` (depois reinicie o gateway).
+- ⚠️ Como o repo é público, as chaves de teste podem ser **suspensas** pelo provedor (varredura automática). Se pararem de funcionar, gere novas em dashboard.api-football.com / the-odds-api.com e cole no `.env.local`. **Em produção, deixe o repo privado e gire as chaves.**
+
 ## Como rodar
 ```bash
 npm install
