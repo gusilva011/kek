@@ -60,7 +60,7 @@ function num(v: string): number {
   return Math.round(parseFloat(v) * 100) / 100;
 }
 function sanitize(s: string): string {
-  return s.toLowerCase().replace(/[^a-z0-9]+/g, "").slice(0, 24) || "x";
+  return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "").slice(0, 24) || "x";
 }
 
 /** Converte os mercados (bets) da API-Football no nosso formato. */
@@ -169,10 +169,11 @@ function normalizeBets(fid: string, home: string, away: string, bets: ApiBet[]):
     for (const v of b.values) {
       const odd = Number(v.odd);
       if (!Number.isFinite(odd) || odd < 1.01) continue;
-      let sk = sanitize(v.value);
+      const vstr = String(v.value);
+      let sk = sanitize(vstr);
       while (seen.has(sk)) sk += "_";
       seen.add(sk);
-      selections.push({ id: makeSelectionId(fid, sanitize(b.name), sk), label: ptValue(v.value, home, away), odds: num(v.odd), suspended: false });
+      selections.push({ id: makeSelectionId(fid, sanitize(b.name), sk), label: ptValue(vstr, home, away), odds: num(v.odd), suspended: false });
       if (selections.length >= 18) break; // cap (placar exato tem dezenas)
     }
     if (selections.length >= 2) out.push({ key: sanitize(b.name), name: ptMarketName(b.name), selections });

@@ -292,10 +292,56 @@ const MARKET_PT: Record<string, string> = {
   "To Score in Both Halves - Away": "Visitante Marca nos 2 Tempos",
   "First Half Winner ": "Vencedor 1º Tempo",
   "Anytime Goal Scorer": "Marca a Qualquer Momento",
+  // 1º / 2º tempo e variações da API-Football
+  "Asian Handicap (2nd Half)": "Handicap Asiático (2º Tempo)",
+  "Asian Handicap First Half": "Handicap Asiático (1º Tempo)",
+  "European Handicap (2nd Half)": "Handicap Europeu (2º Tempo)",
+  "European Handicap": "Handicap Europeu",
+  "Handicap Result First Half": "Resultado com Handicap (1º Tempo)",
+  "Away Odd/Even": "Par/Ímpar (Visitante)",
+  "Home Odd/Even": "Par/Ímpar (Mandante)",
+  "Odd/Even First Half": "Par/Ímpar (1º Tempo)",
+  "Odd/Even Second Half": "Par/Ímpar (2º Tempo)",
+  "Corners. Odd/Even": "Escanteios Par/Ímpar",
+  "Away Team Exact Goals Number": "Gols Exatos do Visitante",
+  "Home Team Exact Goals Number": "Gols Exatos do Mandante",
+  "Exact Goals Number": "Número Exato de Gols",
+  "Away Team Score a Goal": "Visitante Marca um Gol",
+  "Home Team Score a Goal": "Mandante Marca um Gol",
+  "Away Team Total Goals(1st Half)": "Total do Visitante (1º Tempo)",
+  "Away Team Total Goals(2nd Half)": "Total do Visitante (2º Tempo)",
+  "Home Team Total Goals(1st Half)": "Total do Mandante (1º Tempo)",
+  "Home Team Total Goals(2nd Half)": "Total do Mandante (2º Tempo)",
+  "Away team will score in both halves": "Visitante Marca nos 2 Tempos",
+  "Home team will score in both halves": "Mandante Marca nos 2 Tempos",
+  "Both Teams To Score Second Half": "Ambos Marcam (2º Tempo)",
+  "Both Teams To Score in Both Halves": "Ambos Marcam nos 2 Tempos",
+  "Correct Score Second Half": "Placar Exato (2º Tempo)",
+  "Double Chance Second Half": "Dupla Chance (2º Tempo)",
+  "Draw No Bet (1st Half)": "Empate Anula (1º Tempo)",
+  "Draw No Bet (2nd Half)": "Empate Anula (2º Tempo)",
+  "First 10 min Winner": "Vencedor dos Primeiros 10 min",
+  "First Team to Score (3 way) 1st Half": "Primeiro a Marcar (1º Tempo)",
+  "First Team To Score": "Primeiro a Marcar",
+  "Home win both halves": "Mandante Vence os 2 Tempos",
+  "Away win both halves": "Visitante Vence os 2 Tempos",
+  "Win Both Halves": "Vence os 2 Tempos",
+  "Lose Both Halves": "Perde os 2 Tempos",
+  "Win Either Half": "Vence Algum Tempo",
+  "Last Team To Score": "Time a Marcar por Último",
+  "Scoring Draw": "Empate com Gols",
+  "To Score in Both Halves": "Marca nos 2 Tempos",
+  "To Win Either Half": "Vence Algum Tempo",
+  "Second Half Exact Goals Number": "Gols Exatos (2º Tempo)",
+  "Total Goals/Both Teams To Score": "Total de Gols / Ambos Marcam",
 };
 
 export function ptMarketName(name: string): string {
-  return MARKET_PT[name.trim()] ?? name.trim();
+  const n = name.trim();
+  if (MARKET_PT[n]) return MARKET_PT[n];
+  // Normaliza traços ("Goals Over/Under - Second Half" → "...Second Half").
+  const n2 = n.replace(/\s*-\s*/g, " ");
+  return MARKET_PT[n2] ?? n;
 }
 
 /** Traduz uma palavra de resultado (sem times). */

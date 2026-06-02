@@ -5,6 +5,7 @@ import { useStore } from "@/store/useStore";
 import { MARKET_TABS } from "@/lib/catalog";
 import type { StatusFilter } from "@/store/useStore";
 import { Icon } from "./ui/Icon";
+import { HScroller } from "./ui/HScroller";
 
 const STATUS_TABS: { key: StatusFilter; label: string }[] = [
   { key: "all", label: "Todas" },
@@ -84,7 +85,7 @@ export function CenterControls() {
 
       {/* Abas de dia (Próximas) — estilo Betano */}
       {filters.status === "upcoming" && days.length > 1 && (
-        <div className="flex gap-2 overflow-x-auto no-scrollbar">
+        <HScroller className="gap-2">
           <DayTab active={filters.day === null} onClick={() => setFilters({ day: null })}>
             Todos
           </DayTab>
@@ -93,7 +94,7 @@ export function CenterControls() {
               {dayLabel(d)}
             </DayTab>
           ))}
-        </div>
+        </HScroller>
       )}
 
       {filters.sport === "football" && (

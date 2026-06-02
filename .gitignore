@@ -20,7 +20,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+# ⚠️ REPO DE TESTE/HANDOFF: .env.local e /data/ estão VERSIONADOS de propósito
+# para o colaborador continuar exatamente do mesmo ponto (chaves de teste +
+# acervo de jogos + contas demo). NÃO contém dados oficiais/reais.
+# Em produção, REMOVA o "#" das linhas abaixo e gire as chaves.
+# .env*.local
 .env
 
 # typescript
@@ -28,4 +32,4 @@ yarn-error.log*
 next-env.d.ts
 
 # data (dev) — store em JSON e SQLite
-/data/
+# /data/

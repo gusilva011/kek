@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { useStore } from "@/store/useStore";
 import { sportMeta, sportPriority } from "@/lib/catalog";
 import { Icon } from "./ui/Icon";
+import { HScroller } from "./ui/HScroller";
 
 export function SportsRibbon() {
   const matches = useStore((s) => s.matches);
@@ -23,26 +24,28 @@ export function SportsRibbon() {
   }, [matches]);
 
   return (
-    <div className="mb-4 flex items-center gap-2 overflow-x-auto rounded-xl border border-white/5 bg-ink-850/60 p-2 no-scrollbar">
-      <Pill live active={live} onClick={() => setFilters({ status: "live", league: null })}>
-        <Icon name="live" size={15} />
-        Ao Vivo
-      </Pill>
-      <span className="mx-0.5 h-5 w-px shrink-0 bg-white/10" />
-      {sports.map(({ sport, count }) => {
-        const meta = sportMeta(sport);
-        return (
-          <Pill
-            key={sport}
-            active={!live && filters.sport === sport}
-            onClick={() => setFilters({ sport, league: null, status: "all" })}
-          >
-            <Icon name={meta.icon} size={16} />
-            {meta.label}
-            <span className="rounded bg-white/10 px-1 text-[10px] font-bold">{count}</span>
-          </Pill>
-        );
-      })}
+    <div className="mb-4 rounded-xl border border-white/5 bg-ink-850/60 p-2">
+      <HScroller className="items-center gap-2">
+        <Pill live active={live} onClick={() => setFilters({ status: "live", league: null })}>
+          <Icon name="live" size={15} />
+          Ao Vivo
+        </Pill>
+        <span className="mx-0.5 h-5 w-px shrink-0 bg-white/10" />
+        {sports.map(({ sport, count }) => {
+          const meta = sportMeta(sport);
+          return (
+            <Pill
+              key={sport}
+              active={!live && filters.sport === sport}
+              onClick={() => setFilters({ sport, league: null, status: "all" })}
+            >
+              <Icon name={meta.icon} size={16} />
+              {meta.label}
+              <span className="rounded bg-white/10 px-1 text-[10px] font-bold">{count}</span>
+            </Pill>
+          );
+        })}
+      </HScroller>
     </div>
   );
 }

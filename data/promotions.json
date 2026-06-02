@@ -1,0 +1,22 @@
+[
+  {
+    "id": "promo_aad299b5e085",
+    "title": "Bônus de boas-vindas",
+    "description": "Novos clientes começam com depósito dobrado!",
+    "badge": "Novo cliente",
+    "terms": "Saldo fictício, válido apenas na versão demonstrativa.",
+    "ctaLabel": "Quero meu bônus",
+    "active": true,
+    "createdAt": 1780359354032
+  },
+  {
+    "id": "promo_eb622c70f443",
+    "title": "Cashout em todos os jogos",
+    "description": "Encerre sua aposta antes do fim e garanta o lucro — disponível em todos os eventos ao vivo.",
+    "badge": "Sempre ativo",
+    "terms": "Valor de cashout sujeito às odds do momento.",
+    "ctaLabel": "Saiba mais",
+    "active": true,
+    "createdAt": 1780359353032
+  }
+]
