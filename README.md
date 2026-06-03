@@ -37,6 +37,18 @@ de seleção. Quando não há imagem em nenhuma fonte, mostra um monograma escur
 
 ---
 
+## ✨ Atualizações recentes (jun/2026)
+
+Última leva de melhorias (segurança, cadastro, banners e múltiplas):
+
+- 🔒 **Segurança**: cabeçalhos HTTP (CSP, HSTS, X-Frame-Options, nosniff, Referrer-Policy) no `next.config.mjs`; **Next.js 14.2.15 → 14.2.35** (corrige CVE); **allowlist de `Origin`** no gateway WebSocket (anti cross-site hijacking, via `WS_ALLOWED_ORIGINS`); senha do admin agora vem de **`ADMIN_PASSWORD`** (sem hardcode); credenciais demo do `/admin` aparecem **só em desenvolvimento**.
+- 🦶 **Rodapé global**: movido para o `layout.tsx` — aparece em **todas** as páginas (legal/+18/jogo responsável), não só na home.
+- 📝 **Cadastro em 3 etapas** (padrão Superbet): dados → contato → acesso, com barra de progresso, validação por etapa e **checagem de disponibilidade em tempo real** de login/CPF/e-mail (✓ disponível / ✗ em uso) enquanto digita.
+- 🖼️ **Banners**: texto do **selo** do topo agora é **editável** por banner; suporte a **vídeo de fundo** (por URL `.mp4`/`.webm`) com abas Imagem/Vídeo no editor.
+- 🔥 **Múltiplas Populares**: nova seção na home (carrossel) com múltiplas em destaque montadas a partir dos jogos reais; botão adiciona a combinação inteira ao bilhete. Pode ser **curada no backoffice** (nova aba **Múltiplas** → escolher jogos/mercados) ou gerada **automaticamente** (favorito de cada jogo) quando não há nenhuma ativa.
+
+---
+
 ## Como rodar
 
 ```bash
@@ -123,7 +135,9 @@ src/
 - ✅ **Programa de afiliados** (código + link `?ref=`, comissão = % do GGR dos indicados)
 - ✅ **Acervo demo do CRM** (~160 clientes BR sintéticos com histórico realista) auto-semeado no modo `demo`
 - ✅ **Mobile responsivo**, design premium (ícones SVG, bandeiras flagcdn), **multi-tenant** (white-label)
-- ✅ Segurança: rate-limit anti-brute-force + sessões persistidas que sobrevivem ao restart
+- ✅ **Múltiplas Populares** na home (curadas no backoffice ou automáticas) + **selo editável** e **vídeo** nos banners
+- ✅ **Cadastro em 3 etapas** com checagem de disponibilidade (login/CPF/e-mail) em tempo real
+- ✅ Segurança: rate-limit anti-brute-force, sessões persistidas, **cabeçalhos HTTP** (CSP/HSTS/X-Frame), **Origin allowlist** no WebSocket e **admin via `ADMIN_PASSWORD`**
 
 ---
 
