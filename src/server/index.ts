@@ -38,6 +38,24 @@ const PROVIDER = process.env.ODDS_PROVIDER ?? "simulation";
 const ODDS_KEY = process.env.ODDS_API_KEY ?? "";
 const AF_KEY = process.env.APIFOOTBALL_KEY ?? "";
 
+// Origens autorizadas a abrir o WebSocket. Sem isso, qualquer página de
+// terceiros poderia abrir uma conexão usando o cookie/token da vítima
+// (cross-site WebSocket hijacking). Configurável via WS_ALLOWED_ORIGINS
+// (lista separada por vírgula); default cobre o dev local.
+const ALLOWED_ORIGINS = new Set(
+  (process.env.WS_ALLOWED_ORIGINS ??
+    "http://localhost:3000,http://127.0.0.1:3000")
+    .split(",")
+    .map((o) => o.trim())
+    .filter(Boolean),
+);
+
+/** Aceita a conexão? Origem na allowlist, ou ausente (cliente não-browser). */
+function isAllowedOrigin(origin: string | undefined): boolean {
+  if (!origin) return true; // ferramentas/health-check sem Origin (não é browser)
+  return ALLOWED_ORIGINS.has(origin);
+}
+
 function makeEngine(): OddsSource {
   // Modo AO VIVO REAL: acervo como pré-jogo + polling de /fixtures?live=all
   // (placar/minuto reais dos jogos acontecendo agora). Precisa da chave AF.
@@ -117,6 +135,7 @@ function buildSnapshot(userId: string | null): SnapshotPayload {
     bets: userId ? store.getBets(userId) : [],
     banners: store.getBanners(),
     promotions: store.getPromotions(),
+    popularMultiples: store.getPopularMultiples(),
     branding: store.getBranding(),
     transactions: userId ? store.getTransactions(userId) : [],
     serverTime: Date.now(),
@@ -152,6 +171,13 @@ wss.on("error", (err: NodeJS.ErrnoException) => {
 });
 
 wss.on("connection", (ws, req) => {
+  // Defesa contra cross-site WebSocket hijacking: recusa origens não autorizadas.
+  const origin = req.headers.origin;
+  if (!isAllowedOrigin(origin)) {
+    console.warn(`[ws] conexão recusada — origem não autorizada: ${origin}`);
+    ws.close(1008, "Origin não autorizada");
+    return;
+  }
   const url = new URL(req.url ?? "/", "http://localhost");
   const token = url.searchParams.get("token");
   socketIp.set(ws, req.socket.remoteAddress ?? "?");
@@ -229,6 +255,16 @@ function handleMessage(ws: WebSocket, msg: ClientMessage): void {
         store.saveBranding(msg.payload);
         broadcast({ type: "branding", payload: store.getBranding() });
       });
+    case "admin_save_multiple":
+      return handleAdmin(ws, msg.refId, () => {
+        store.savePopularMultiple(msg.payload);
+        broadcast({ type: "popular_multiples", payload: store.getPopularMultiples() });
+      });
+    case "admin_delete_multiple":
+      return handleAdmin(ws, msg.refId, () => {
+        store.deletePopularMultiple(msg.payload.id);
+        broadcast({ type: "popular_multiples", payload: store.getPopularMultiples() });
+      });
     case "admin_overview":
       return handleAdminOverview(ws, msg.refId);
     case "admin_adjust_balance":
@@ -239,6 +275,11 @@ function handleMessage(ws: WebSocket, msg: ClientMessage): void {
       return handleAdminSetAffiliateRate(ws, msg.refId, msg.payload);
     case "affiliate_summary":
       return handleAffiliateSummary(ws, msg.refId);
+    case "check_availability":
+      return send(ws, {
+        type: "ack",
+        payload: { refId: msg.refId, ok: true, data: store.checkAvailability(msg.payload) },
+      });
   }
 }
 

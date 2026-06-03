@@ -35,6 +35,13 @@ export function BannerManager() {
   const pushToast = useStore((s) => s.pushToast);
   const [editing, setEditing] = useState<BannerInput | null>(null);
   const [saving, setSaving] = useState(false);
+  const [mediaTab, setMediaTab] = useState<"image" | "video">("image");
+
+  /** Abre o editor já na aba de mídia correta (vídeo se o banner tiver vídeo). */
+  const openEditor = (b: BannerInput) => {
+    setEditing(b);
+    setMediaTab(b.videoUrl ? "video" : "image");
+  };
 
   const save = async () => {
     if (!editing) return;
@@ -69,7 +76,7 @@ export function BannerManager() {
       <div className="flex items-center justify-between">
         <p className="text-sm text-slate-400">{banners.length} banner(s) cadastrado(s)</p>
         <button
-          onClick={() => setEditing(emptyBanner(banners.length))}
+          onClick={() => openEditor(emptyBanner(banners.length))}
           className="rounded-lg bg-brand px-3 py-1.5 text-sm font-bold text-ink-950 hover:bg-brand-dark"
         >
           + Novo banner
@@ -79,7 +86,18 @@ export function BannerManager() {
       <div className="space-y-2">
         {banners.map((b) => (
           <div key={b.id} className="flex items-center gap-3 rounded-lg border border-ink-600 bg-ink-800 p-3">
-            <div className={`h-10 w-16 shrink-0 rounded bg-gradient-to-r ${b.bg}`} />
+            {b.videoUrl ? (
+              <div className="flex h-10 w-16 shrink-0 items-center justify-center rounded bg-ink-700 text-[9px] font-bold tracking-wide text-brand-light">
+                VÍDEO
+              </div>
+            ) : b.imageUrl ? (
+              <div
+                className="h-10 w-16 shrink-0 rounded bg-cover bg-center"
+                style={{ backgroundImage: `url(${b.imageUrl})` }}
+              />
+            ) : (
+              <div className={`h-10 w-16 shrink-0 rounded bg-gradient-to-r ${b.bg}`} />
+            )}
             <div className="min-w-0 flex-1">
               <div className="truncate text-sm font-semibold text-white">{b.title}</div>
               <div className="truncate text-xs text-slate-500">{b.subtitle}</div>
@@ -93,7 +111,7 @@ export function BannerManager() {
               {b.active ? "Ativo" : "Inativo"}
             </button>
             <button
-              onClick={() => setEditing({ ...b })}
+              onClick={() => openEditor({ ...b })}
               className="shrink-0 rounded px-2 py-1 text-xs text-slate-300 hover:bg-ink-700"
             >
               Editar
@@ -124,6 +142,19 @@ export function BannerManager() {
             onChange={(e) => setEditing({ ...editing, subtitle: e.target.value })}
           />
           <label className="block text-xs text-slate-400">
+            Selo do topo (texto)
+            <input
+              className={`${FIELD} mt-1`}
+              placeholder="Ex.: BrasilBet, Promoção, Ao vivo"
+              value={editing.badge ?? ""}
+              maxLength={24}
+              onChange={(e) => setEditing({ ...editing, badge: e.target.value })}
+            />
+            <span className="mt-1 block text-[10px] text-slate-600">
+              Aparece no cantinho superior do banner. Vazio = “BrasilBet”.
+            </span>
+          </label>
+          <label className="block text-xs text-slate-400">
             Cor de fundo (usada quando não há imagem)
             <select
               className={FIELD}
@@ -138,15 +169,59 @@ export function BannerManager() {
             </select>
           </label>
           <div className="text-xs text-slate-400">
-            Imagem do banner (opcional — enviada do seu computador)
-            <div className="mt-1.5">
-              <ImageUpload
-                value={editing.imageUrl}
-                onChange={(v) => setEditing({ ...editing, imageUrl: v })}
-                options={{ maxW: 1280, maxH: 640, type: "image/jpeg", quality: 0.82 }}
-                previewClass="h-16 w-28"
-              />
+            Mídia do banner (opcional)
+            {/* Abas: imagem (upload) ou vídeo (URL) */}
+            <div className="mt-1.5 flex gap-1 rounded-lg border border-ink-600 bg-ink-900 p-1">
+              {(["image", "video"] as const).map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  onClick={() => setMediaTab(m)}
+                  className={`flex-1 rounded-md py-1.5 text-xs font-bold transition ${
+                    mediaTab === m ? "bg-brand text-ink-950" : "text-slate-400 hover:text-slate-200"
+                  }`}
+                >
+                  {m === "image" ? "Imagem" : "Vídeo"}
+                </button>
+              ))}
             </div>
+
+            {mediaTab === "image" ? (
+              <div className="mt-2">
+                <ImageUpload
+                  value={editing.imageUrl}
+                  onChange={(v) => setEditing({ ...editing, imageUrl: v })}
+                  options={{ maxW: 1280, maxH: 640, type: "image/jpeg", quality: 0.82 }}
+                  previewClass="h-16 w-28"
+                />
+                <span className="mt-1 block text-[10px] text-slate-600">
+                  Enviada do seu computador. Sem imagem, usa a cor de fundo abaixo.
+                </span>
+              </div>
+            ) : (
+              <div className="mt-2 space-y-2">
+                <input
+                  className={FIELD}
+                  placeholder="URL do vídeo (.mp4 ou .webm)"
+                  value={editing.videoUrl ?? ""}
+                  onChange={(e) => setEditing({ ...editing, videoUrl: e.target.value })}
+                />
+                <span className="block text-[10px] text-slate-600">
+                  Cole o link de um vídeo hospedado (.mp4/.webm). Roda mudo, em loop, e tem
+                  prioridade sobre a imagem. Deixe vazio para não usar vídeo.
+                </span>
+                {editing.videoUrl?.trim() ? (
+                  <video
+                    src={editing.videoUrl}
+                    className="h-20 w-36 rounded-md object-cover"
+                    muted
+                    loop
+                    autoPlay
+                    playsInline
+                  />
+                ) : null}
+              </div>
+            )}
           </div>
           <div className="grid grid-cols-2 gap-3">
             <input

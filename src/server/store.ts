@@ -22,6 +22,8 @@ import type {
   MarketKey,
   Promotion,
   PromotionInput,
+  PopularMultiple,
+  PopularMultipleInput,
   PublicUser,
   Role,
   Score,
@@ -112,6 +114,7 @@ export class Store {
   private bets = new Map<string, StoredBet>();
   private banners: Banner[] = [];
   private promotions: Promotion[] = [];
+  private popularMultiples: PopularMultiple[] = [];
   private branding: Branding = { brandName: TENANT_NAME };
   private affiliateConfig: AffiliateConfig = { revSharePct: 0.3 };
   /** token de sessão -> dados (persistido em sessions.json; sobrevive ao restart). */
@@ -146,6 +149,7 @@ export class Store {
     }
     this.banners = loadJson<Banner[]>("banners.json", []);
     this.promotions = loadJson<Promotion[]>("promotions.json", []);
+    this.popularMultiples = loadJson<PopularMultiple[]>("popular-multiples.json", []);
     this.branding = loadJson<Branding>("branding.json", { brandName: TENANT_NAME });
     this.affiliateConfig = loadJson<AffiliateConfig>("affiliate.json", { revSharePct: 0.3 });
     this.loadSessions();
@@ -184,7 +188,16 @@ export class Store {
 
   private seed(): void {
     if (this.users.size === 0) {
-      const { salt, hash } = hashPassword("admin123");
+      // Senha do admin vem do ambiente. O fallback "admin123" existe só para o
+      // demo rodar out-of-the-box — EM PRODUÇÃO, defina ADMIN_PASSWORD.
+      const adminPassword = process.env.ADMIN_PASSWORD ?? "admin123";
+      if (!process.env.ADMIN_PASSWORD) {
+        console.warn(
+          "[store] ⚠️ ADMIN_PASSWORD não definido — usando senha demo 'admin123'. " +
+            "Defina ADMIN_PASSWORD no .env.local antes de ir para produção.",
+        );
+      }
+      const { salt, hash } = hashPassword(adminPassword);
       const admin: StoredUser = {
         id: newId("usr"),
         login: "admin",
@@ -349,6 +362,32 @@ export class Store {
     this.saveUsers();
     const token = this.createSession(user.id);
     return { ok: true, user: this.publicUser(user), token };
+  }
+
+  /**
+   * Verifica se login / CPF / e-mail estão DISPONÍVEIS (não usados por outra
+   * conta). Só checa os campos enviados. true = disponível, false = em uso.
+   * Espelha as mesmas comparações do `register` (case-insensitive, CPF/e-mail
+   * normalizados) para o cliente avisar em tempo real, antes do envio.
+   */
+  checkAvailability(input: { login?: string; cpf?: string; email?: string }): {
+    login?: boolean;
+    cpf?: boolean;
+    email?: boolean;
+  } {
+    const loginLower = input.login?.trim().toLowerCase();
+    const cpfDigits = input.cpf ? normalizeCpf(input.cpf) : undefined;
+    const emailNorm = input.email?.trim().toLowerCase();
+    const out: { login?: boolean; cpf?: boolean; email?: boolean } = {};
+    if (loginLower) out.login = true;
+    if (cpfDigits) out.cpf = true;
+    if (emailNorm) out.email = true;
+    for (const u of this.users.values()) {
+      if (loginLower && u.loginLower === loginLower) out.login = false;
+      if (cpfDigits && u.cpf && u.cpf === cpfDigits) out.cpf = false;
+      if (emailNorm && u.email && u.email === emailNorm) out.email = false;
+    }
+    return out;
   }
 
   private addTxn(user: StoredUser, type: TxType, amount: number, status: Transaction["status"], description?: string): void {
@@ -758,6 +797,32 @@ export class Store {
   deleteBanner(id: string): void {
     this.banners = this.banners.filter((b) => b.id !== id);
     saveJson("banners.json", this.banners);
+  }
+
+  /* ---------------- múltiplas populares (curadas) ---------------- */
+
+  getPopularMultiples(): PopularMultiple[] {
+    return [...this.popularMultiples].sort((a, b) => a.order - b.order);
+  }
+
+  savePopularMultiple(input: PopularMultipleInput): PopularMultiple {
+    if (input.id) {
+      const idx = this.popularMultiples.findIndex((m) => m.id === input.id);
+      if (idx >= 0) {
+        this.popularMultiples[idx] = { ...this.popularMultiples[idx], ...input, id: input.id };
+        saveJson("popular-multiples.json", this.popularMultiples);
+        return this.popularMultiples[idx];
+      }
+    }
+    const multiple: PopularMultiple = { ...input, id: newId("mult") };
+    this.popularMultiples.push(multiple);
+    saveJson("popular-multiples.json", this.popularMultiples);
+    return multiple;
+  }
+
+  deletePopularMultiple(id: string): void {
+    this.popularMultiples = this.popularMultiples.filter((m) => m.id !== id);
+    saveJson("popular-multiples.json", this.popularMultiples);
   }
 
   savePromotion(input: PromotionInput): Promotion {

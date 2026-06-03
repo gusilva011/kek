@@ -7,6 +7,7 @@ import type {
   Branding,
   MarketKey,
   Match,
+  PopularMultiple,
   Promotion,
   PublicUser,
   Transaction,
@@ -53,6 +54,7 @@ interface StoreState {
   bets: Record<string, Bet>;
   banners: Banner[];
   promotions: Promotion[];
+  popularMultiples: PopularMultiple[];
   branding: Branding;
   transactions: Transaction[];
   slip: SlipSelection[];
@@ -80,6 +82,7 @@ interface StoreState {
     bets: Bet[];
     banners: Banner[];
     promotions: Promotion[];
+    popularMultiples: PopularMultiple[];
     branding: Branding;
     transactions: Transaction[];
   }) => void;
@@ -93,6 +96,7 @@ interface StoreState {
   upsertBet: (b: Bet) => void;
   setBanners: (b: Banner[]) => void;
   setPromotions: (p: Promotion[]) => void;
+  setPopularMultiples: (m: PopularMultiple[]) => void;
   setBranding: (b: Branding) => void;
   addSelection: (s: SlipSelection) => void;
   removeSelection: (selectionId: string) => void;
@@ -113,6 +117,7 @@ export const useStore = create<StoreState>((set) => ({
   bets: {},
   banners: [],
   promotions: [],
+  popularMultiples: [],
   branding: { brandName: TENANT_NAME },
   transactions: [],
   slip: [],
@@ -132,7 +137,7 @@ export const useStore = create<StoreState>((set) => ({
   closeDetail: () => set({ detailMatchId: null }),
   setFilters: (p) => set((state) => ({ filters: { ...state.filters, ...p } })),
 
-  applySnapshot: ({ user, matches, bets, banners, promotions, branding, transactions }) =>
+  applySnapshot: ({ user, matches, bets, banners, promotions, popularMultiples, branding, transactions }) =>
     set({
       user,
       wallet: user?.wallet ?? null,
@@ -140,6 +145,7 @@ export const useStore = create<StoreState>((set) => ({
       bets: Object.fromEntries(bets.map((b) => [b.id, b])),
       banners,
       promotions,
+      popularMultiples,
       branding,
       transactions,
     }),
@@ -166,6 +172,7 @@ export const useStore = create<StoreState>((set) => ({
   upsertBet: (b) => set((state) => ({ bets: { ...state.bets, [b.id]: b } })),
   setBanners: (banners) => set({ banners }),
   setPromotions: (promotions) => set({ promotions }),
+  setPopularMultiples: (popularMultiples) => set({ popularMultiples }),
   setBranding: (branding) => set({ branding }),
   addSelection: (sel) =>
     set((state) => ({

@@ -37466,5 +37466,35 @@
     "affiliateCode": "2F9D5C",
     "referredBy": "usr_addec29f0318",
     "demo": true
+  },
+  {
+    "id": "usr_eb96fa63b8d5",
+    "login": "yuricdx",
+    "loginLower": "yuricdx",
+    "name": "yuri carlos",
+    "email": "yuricarlos1000@gmail.com",
+    "phone": "85994265759",
+    "cpf": "62490846302",
+    "birthDate": "2005-04-10",
+    "passwordSalt": "e850a08fb2470b66fe96992d6c9714cb",
+    "passwordHash": "abf1b136f32302a9755f48c588811e55cd0729c554d3f67df5a02afd3517771d412adaad4a93e47e6bae328cbb1cd399d46ca651a67d4734199d6d16b72901f8",
+    "role": "user",
+    "wallet": {
+      "balance": 1000,
+      "currency": "BRL"
+    },
+    "transactions": [
+      {
+        "id": "tx_ae10bf09eec7",
+        "type": "bonus",
+        "amount": 1000,
+        "balanceAfter": 1000,
+        "status": "completed",
+        "description": "Bônus de boas-vindas",
+        "at": 1780443684706
+      }
+    ],
+    "createdAt": 1780443684705,
+    "affiliateCode": "GXV44U"
   }
 ]

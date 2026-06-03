@@ -19,6 +19,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# logs do dev server (não versionar)
+dev-server*.log
+
 # local env files
 # ⚠️ REPO DE TESTE/HANDOFF: .env.local e /data/ estão VERSIONADOS de propósito
 # para o colaborador continuar exatamente do mesmo ponto (chaves de teste +

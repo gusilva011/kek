@@ -39,7 +39,17 @@ export function HeroBanners() {
             className={`absolute inset-0 transition-opacity duration-700 ease-out ${i === idx ? "opacity-100" : "opacity-0"}`}
             aria-hidden={i !== idx}
           >
-            {b.imageUrl ? (
+            {b.videoUrl ? (
+              <video
+                className="absolute inset-0 h-full w-full object-cover"
+                src={b.videoUrl}
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-hidden
+              />
+            ) : b.imageUrl ? (
               <div
                 className="absolute inset-0 animate-kenburns bg-cover bg-center"
                 style={{ backgroundImage: `url(${b.imageUrl})` }}
@@ -61,7 +71,8 @@ export function HeroBanners() {
         <div className="relative flex min-h-[200px] flex-col justify-center p-6 sm:min-h-[256px] sm:p-9">
           <div key={current.id} className="max-w-lg animate-slideUp">
             <span className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-brand/30 bg-brand/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-brand-light backdrop-blur-sm">
-              <span className="h-1.5 w-1.5 animate-livePulse rounded-full bg-brand" /> BrasilBet
+              <span className="h-1.5 w-1.5 animate-livePulse rounded-full bg-brand" />{" "}
+              {current.badge?.trim() || "BrasilBet"}
             </span>
             <h2 className="text-2xl font-extrabold leading-[1.1] text-white drop-shadow-lg sm:text-[2rem]">
               {current.title}

@@ -9,11 +9,13 @@
 import { useStore } from "@/store/useStore";
 import type {
   AckPayload,
+  AvailabilityResult,
   BannerInput,
   Branding,
   ClientMessage,
   MultiBetPayload,
   PlaceBetPayload,
+  PopularMultipleInput,
   PromotionInput,
   ServerMessage,
 } from "@/shared/types";
@@ -185,6 +187,9 @@ function handle(msg: ServerMessage): void {
     case "promotions":
       s.setPromotions(msg.payload);
       break;
+    case "popular_multiples":
+      s.setPopularMultiples(msg.payload);
+      break;
     case "branding":
       s.setBranding(msg.payload);
       break;
@@ -234,14 +239,26 @@ export async function register(input: {
   phone: string;
   cpf: string;
   birthDate: string;
+  /** Código de indicação digitado no formulário (tem prioridade sobre o ?ref= do link). */
+  ref?: string;
 }): Promise<AckPayload> {
-  const ref = getRef() ?? undefined;
+  const ref = input.ref?.trim().toUpperCase() || getRef() || undefined;
   const ack = await request({ type: "register", refId: newRef(), payload: { ...input, ref } });
   if (ack.ok && ack.token) {
     saveToken(ack.token);
     clearRef(); // indicação consumida
   }
   return ack;
+}
+
+/** Consulta se login/CPF/e-mail estão disponíveis (checagem em tempo real no cadastro). */
+export async function checkAvailability(input: {
+  login?: string;
+  cpf?: string;
+  email?: string;
+}): Promise<AvailabilityResult> {
+  const ack = await request({ type: "check_availability", refId: newRef(), payload: input });
+  return ack.ok && ack.data ? (ack.data as AvailabilityResult) : {};
 }
 
 export async function login(loginName: string, password: string): Promise<AckPayload> {
@@ -297,6 +314,12 @@ export function adminDeletePromo(id: string): Promise<AckPayload> {
 }
 export function adminSaveBranding(payload: Branding): Promise<AckPayload> {
   return request({ type: "admin_save_branding", refId: newRef(), payload });
+}
+export function adminSaveMultiple(payload: PopularMultipleInput): Promise<AckPayload> {
+  return request({ type: "admin_save_multiple", refId: newRef(), payload });
+}
+export function adminDeleteMultiple(id: string): Promise<AckPayload> {
+  return request({ type: "admin_delete_multiple", refId: newRef(), payload: { id } });
 }
 
 /* ---------------- backoffice: CRM / métricas ---------------- */

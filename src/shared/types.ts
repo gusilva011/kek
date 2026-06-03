@@ -138,6 +138,10 @@ export interface Banner {
   /** Classe de gradiente Tailwind (ex.: "from-emerald-600 to-emerald-900"). */
   bg: string;
   imageUrl?: string;
+  /** URL de um vídeo (.mp4/.webm) de fundo. Tem prioridade sobre imagem/gradiente. */
+  videoUrl?: string;
+  /** Texto do selo no topo do banner (default "BrasilBet" quando vazio). */
+  badge?: string;
   ctaLabel?: string;
   ctaHref?: string;
   active: boolean;
@@ -157,6 +161,41 @@ export interface Promotion {
 
 export type BannerInput = Omit<Banner, "id"> & { id?: string };
 export type PromotionInput = Omit<Promotion, "id" | "createdAt"> & { id?: string };
+
+/* ------------------------------------------------------------------ */
+/* Múltiplas Populares (curadas pelo backoffice)                       */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Uma perna de uma múltipla popular curada. Guarda a referência viva
+ * (matchId/marketKey/selectionId) E um snapshot de exibição, para o card
+ * continuar mostrando algo coerente mesmo se o jogo sair do board.
+ */
+export interface MultipleLeg {
+  matchId: string;
+  marketKey: MarketKey;
+  selectionId: string;
+  /** Snapshot p/ exibição (estável). */
+  matchLabel: string;
+  league: string;
+  marketName: string;
+  /** Nome exibido da seleção (time / "Empate"). */
+  selectionLabel: string;
+  oddsAtPick: number;
+}
+
+/** Card de múltipla popular configurado no backoffice. */
+export interface PopularMultiple {
+  id: string;
+  title?: string;
+  /** Nº fictício de "apostas feitas" exibido no topo do card. */
+  popularity: number;
+  active: boolean;
+  order: number;
+  legs: MultipleLeg[];
+}
+
+export type PopularMultipleInput = Omit<PopularMultiple, "id"> & { id?: string };
 
 /** Identidade visual do tenant (white-label). */
 export interface Branding {
@@ -254,6 +293,7 @@ export type ServerMessage =
   | { type: "bet_result"; payload: { bet: Bet; message: string } }
   | { type: "banners"; payload: Banner[] }
   | { type: "promotions"; payload: Promotion[] }
+  | { type: "popular_multiples"; payload: PopularMultiple[] }
   | { type: "branding"; payload: Branding }
   | { type: "transactions"; payload: Transaction[] }
   | { type: "ack"; payload: AckPayload }
@@ -266,6 +306,7 @@ export interface SnapshotPayload {
   bets: Bet[];
   banners: Banner[];
   promotions: Promotion[];
+  popularMultiples: PopularMultiple[];
   branding: Branding;
   transactions: Transaction[];
   serverTime: number;
@@ -315,12 +356,26 @@ export type ClientMessage =
   | { type: "admin_save_promo"; refId: string; payload: PromotionInput }
   | { type: "admin_delete_promo"; refId: string; payload: { id: string } }
   | { type: "admin_save_branding"; refId: string; payload: Branding }
+  | { type: "admin_save_multiple"; refId: string; payload: PopularMultipleInput }
+  | { type: "admin_delete_multiple"; refId: string; payload: { id: string } }
   | { type: "admin_overview"; refId: string }
   | { type: "admin_adjust_balance"; refId: string; payload: { userId: string; amount: number; reason?: string } }
   | { type: "admin_set_blocked"; refId: string; payload: { userId: string; blocked: boolean } }
   | { type: "admin_set_affiliate_rate"; refId: string; payload: { revSharePct: number } }
   | { type: "affiliate_summary"; refId: string }
+  | {
+      type: "check_availability";
+      refId: string;
+      payload: { login?: string; cpf?: string; email?: string };
+    }
   | { type: "ping" };
+
+/** Resposta de check_availability: true = disponível, false = já em uso. */
+export interface AvailabilityResult {
+  login?: boolean;
+  cpf?: boolean;
+  email?: boolean;
+}
 
 export interface PlaceBetPayload {
   matchId: string;

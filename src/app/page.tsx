@@ -2,11 +2,11 @@ import { Sidebar } from "@/components/Sidebar";
 import { SportsRibbon } from "@/components/SportsRibbon";
 import { HeroBanners } from "@/components/HeroBanners";
 import { FeaturedStrip } from "@/components/FeaturedStrip";
+import { PopularMultiples } from "@/components/PopularMultiples";
 import { CenterControls } from "@/components/CenterControls";
 import { LeagueGroups } from "@/components/LeagueGroups";
 import { BetSlip } from "@/components/BetSlip";
 import { MyBets } from "@/components/MyBets";
-import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +24,7 @@ export default function Home() {
           <SportsRibbon />
           <HeroBanners />
           <FeaturedStrip />
+          <PopularMultiples />
           <CenterControls />
           <LeagueGroups />
         </main>
@@ -36,8 +37,6 @@ export default function Home() {
           </div>
         </aside>
       </div>
-
-      <Footer />
     </>
   );
 }

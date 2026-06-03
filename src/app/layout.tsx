@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { TopBar } from "@/components/TopBar";
+import { Footer } from "@/components/Footer";
 import { Toasts } from "@/components/Toasts";
 import { AuthModal } from "@/components/AuthModal";
 import { WsBootstrap } from "@/components/WsBootstrap";
@@ -26,6 +27,7 @@ export default function RootLayout({
         <WsBootstrap />
         <TopBar />
         {children}
+        <Footer />
         <div className="h-20 lg:hidden" aria-hidden />
         <Toasts />
         <AuthModal />

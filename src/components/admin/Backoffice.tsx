@@ -10,8 +10,9 @@ import { BrandingManager } from "./BrandingManager";
 import { Dashboard } from "./Dashboard";
 import { ClientsManager } from "./ClientsManager";
 import { AffiliatesManager } from "./AffiliatesManager";
+import { MultiplesManager } from "./MultiplesManager";
 
-type Tab = "dashboard" | "clientes" | "afiliados" | "branding" | "banners" | "promos";
+type Tab = "dashboard" | "clientes" | "afiliados" | "branding" | "banners" | "multiplas" | "promos";
 
 const TABS: { key: Tab; label: string; icon: IconName }[] = [
   { key: "dashboard", label: "Dashboard", icon: "chart" },
@@ -19,6 +20,7 @@ const TABS: { key: Tab; label: string; icon: IconName }[] = [
   { key: "afiliados", label: "Afiliados", icon: "trophy" },
   { key: "branding", label: "Marca", icon: "settings" },
   { key: "banners", label: "Banners", icon: "star" },
+  { key: "multiplas", label: "Múltiplas", icon: "fire" },
   { key: "promos", label: "Promoções", icon: "ticket" },
 ];
 
@@ -41,9 +43,11 @@ export function Backoffice() {
         >
           Entrar
         </button>
-        <p className="mt-4 text-xs text-slate-600">
-          Admin demo — login: <b className="text-slate-400">admin</b> · senha: <b className="text-slate-400">admin123</b>
-        </p>
+        {process.env.NODE_ENV === "development" && (
+          <p className="mt-4 text-xs text-slate-600">
+            Admin demo — login: <b className="text-slate-400">admin</b> · senha: <b className="text-slate-400">admin123</b>
+          </p>
+        )}
       </Centered>
     );
   }
@@ -128,6 +132,8 @@ export function Backoffice() {
         <BrandingManager />
       ) : tab === "banners" ? (
         <BannerManager />
+      ) : tab === "multiplas" ? (
+        <MultiplesManager />
       ) : (
         <PromoManager />
       )}
